@@ -1,14 +1,12 @@
-# WikiStöria - DPZ Spezialversion mit HTML-Listen
+# WikiStöria - Emoji Version mit echter Fahrsperre-Anleitung
 
 ## Änderungen in dieser Version
-- Alle Anleitungen nutzen **innerHTML** statt textContent
-- Damit können Überschriften, Absätze und Listen formatiert werden
-- Beispiel: DPZ Fahrsperre ist jetzt mit Listenpunkten dargestellt
-- Einheitliches CSS für <ul> und <li> für bessere Lesbarkeit
+- Kategorie **Fahrsperre** enthält jetzt eine echte Anleitung (DPZ)
+- Alle anderen Kategorien bleiben Platzhalter im Ordner `content/`
 
 ## Features
-- Einheitliche Icons für Fahrzeuge und Kategorien
-- Buttons größer & mobil optimiert (volle Breite auf Handy)
-- Smooth Screen-Transitions
-- Moderner Header (Zurück + Darkmode)
+- Einheitliche Emojis für Fahrzeuge und Kategorien
+- Anleitungen ausgelagert in `content/*.html`
+- Einheitliches Layout für Anleitungen
+- Darkmode-Design
 - Meldung bei "Sehr dringend": 📞 051 222 18 53
