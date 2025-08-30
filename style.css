@@ -50,30 +50,31 @@ body {
 
 #back-btn {
   position: fixed;
-  bottom: 20px;
-  left: 20px;
+  top: 70px;
+  left: 15px;
   background: var(--card-bg);
   border: 1px solid var(--card-border);
-  border-radius: 50%;
-  width: 56px;
-  height: 56px;
-  font-size: 1.4rem;
+  border-radius: 12px;
+  padding: 8px 14px;
+  font-size: 1rem;
   color: var(--text-color);
   cursor: pointer;
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
   transition: background 0.3s, transform 0.2s;
   z-index: 1000;
 }
 #back-btn:hover {
   background: rgba(255,255,255,0.25);
-  transform: scale(1.1);
+  transform: translateY(-2px);
 }
 
 .container {
   flex: 1;
-  padding: 2rem;
+  padding: 1.5rem;
+  max-width: 600px;
+  margin: auto;
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
@@ -118,4 +119,21 @@ body {
 
 h2 {
   margin-bottom: 1rem;
+}
+
+/* 📱 Mobile Optimierung */
+@media (max-width: 600px) {
+  .card-grid,
+  .category-grid {
+    grid-template-columns: 1fr;
+  }
+  .container {
+    padding: 1rem;
+  }
+  h2 {
+    font-size: 1.1rem;
+  }
+  .card {
+    padding: 1rem;
+  }
 }
