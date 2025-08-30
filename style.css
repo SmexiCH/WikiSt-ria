@@ -1,117 +1,98 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+:root {
+  --bg-gradient: linear-gradient(135deg, #6a11cb, #2575fc);
+  --card-bg: rgba(255, 255, 255, 0.15);
+  --card-border: rgba(255, 255, 255, 0.3);
+  --text-color: #fff;
+}
+
+body.dark {
+  --bg-gradient: linear-gradient(135deg, #141e30, #243b55);
+  --card-bg: rgba(0, 0, 0, 0.3);
+  --card-border: rgba(255, 255, 255, 0.2);
+  --text-color: #eaeaea;
 }
 
 body {
-    font-family: "Poppins", sans-serif;
-    background: linear-gradient(135deg, #6a11cb, #2575fc);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    color: #222;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: var(--bg-gradient);
+  color: var(--text-color);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  transition: background 0.3s, color 0.3s;
+}
+
+.header {
+  padding: 1rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  font-weight: 600;
+}
+
+.logo {
+  font-size: 1.3rem;
+}
+
+#darkmode-toggle {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 12px;
+  padding: 5px 12px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  color: var(--text-color);
 }
 
 .container {
-    background: white;
-    padding: 2rem;
-    border-radius: 24px;
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
-    text-align: center;
-    width: 95%;
-    max-width: 700px;
-    animation: fadeIn 0.6s ease-in-out;
-    overflow-y: auto;
-    max-height: 95vh;
+  flex: 1;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
 }
 
-h1 {
-    font-size: 2rem;
-    margin-bottom: 1.5rem;
-    font-weight: 600;
-    background: linear-gradient(90deg, #6a11cb, #2575fc);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-h2 {
-    font-size: 1.3rem;
-    margin: 1rem 0;
-    color: #444;
-    font-weight: 500;
-}
-
-button {
-    background: #2575fc;
-    color: white;
-    padding: 16px;
-    margin: 10px 0;
-    border: none;
-    border-radius: 20px;
-    font-size: 1rem;
-    cursor: pointer;
-    width: 100%;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-    transition: transform 0.2s, background 0.3s;
-}
-
-button:hover {
-    background: #6a11cb;
-    transform: translateY(-3px);
-}
-
-.category-grid, .vehicle-grid {
-    display: grid;
-    gap: 15px;
-    margin-top: 1rem;
+.card-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
 }
 
 .category-grid {
-    grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr);
 }
 
-.vehicle-grid {
-    grid-template-columns: repeat(2, 1fr);
+.card {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 20px;
+  padding: 1.5rem;
+  text-align: center;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+  color: var(--text-color);
 }
 
-.category-btn, .vehicle-btn {
-    background: #f8f9ff;
-    color: #2575fc;
-    border: 2px solid transparent;
-    padding: 20px;
-    border-radius: 20px;
-    font-size: 1rem;
-    font-weight: 600;
-    text-align: center;
-    cursor: pointer;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
-    transition: all 0.3s ease;
+.card i {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
 }
 
-.category-btn:hover, .vehicle-btn:hover {
-    background: #2575fc;
-    color: #fff;
-    border-color: #6a11cb;
-    transform: scale(1.05);
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.3);
 }
 
-#instruction-text {
-    background: #f0f4ff;
-    padding: 1.5rem;
-    border-radius: 20px;
-    margin-top: 1.5rem;
-    border: 1px solid #d0dbff;
-    color: #222;
-    text-align: left;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    white-space: pre-line;
-}
+.card.red { border-left: 6px solid #ff6b6b; }
+.card.green { border-left: 6px solid #51cf66; }
 
-@keyframes fadeIn {
-    from { opacity: 0; transform: translateY(20px); }
-    to   { opacity: 1; transform: translateY(0); }
+h2 {
+  margin-bottom: 1rem;
 }

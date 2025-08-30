@@ -1,65 +1,77 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WikiStöria - Störungsbehebung</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WikiStöria - Störungsbehebung</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <div class="container">
-        <h1>WikiStöria - Störungsbehebung</h1>
-        <div id="main-content">
-            <!-- Startseite: Dringend oder nicht? -->
-            <div id="urgency">
-                <button onclick="selectUrgency(true)">
-                    <i class="fa-solid fa-triangle-exclamation"></i> Dringend
-                </button>
-                <button onclick="selectUrgency(false)">
-                    <i class="fa-solid fa-clock"></i> Nicht dringend
-                </button>
-            </div>
+  <div class="header">
+    <span class="logo">WikiStöria</span>
+    <button id="darkmode-toggle">🌙</button>
+  </div>
 
-            <!-- Fahrzeugauswahl -->
-            <div id="vehicle-selection" style="display: none;">
-                <h2><i class="fa-solid fa-train"></i> Fahrzeug auswählen</h2>
-                <div class="vehicle-grid">
-                    <button class="vehicle-btn" onclick="goToCategory('Re 450 DPZ')">🚂 <br> Re 450 (DPZ)</button>
-                    <button class="vehicle-btn" onclick="goToCategory('RABe 514 DTZ')">🚆 <br> RABe 514 (DTZ)</button>
-                    <button class="vehicle-btn" onclick="goToCategory('RABe 511 RVD')">🚄 <br> RABe 511 (RVD)</button>
-                    <button class="vehicle-btn" onclick="goToCategory('Re 420 HVZ-D')">🚂 <br> Re 420 (HVZ-D)</button>
-                </div>
-            </div>
-
-            <!-- Kategorisierung -->
-            <div id="category-selection" style="display: none;">
-                <h2><i class="fa-solid fa-screwdriver-wrench"></i> Störungskategorie</h2>
-                <div class="category-grid">
-                    <button class="category-btn" onclick="showInstructions('fahrsperre')">⚡<br> Fahrsperre</button>
-                    <button class="category-btn" onclick="showInstructions('reset')">🔄<br> Reset</button>
-                    <button class="category-btn" onclick="showInstructions('leittechnik')">💻<br> Leittechnik</button>
-                    <button class="category-btn" onclick="showInstructions('pneumatik')">🌬️<br> Pneumatik</button>
-                    <button class="category-btn" onclick="showInstructions('bremsen')">🛑<br> Bremsen</button>
-                    <button class="category-btn" onclick="showInstructions('zugbeeinflussung')">🚦<br> Zugbeeinflussung</button>
-                    <button class="category-btn" onclick="showInstructions('teloc')">📈<br> TELOC / V-Messer</button>
-                    <button class="category-btn" onclick="showInstructions('schleppen')">🚜<br> Schleppen</button>
-                    <button class="category-btn" onclick="showInstructions('tueren')">🚪<br> Einstiegstüren</button>
-                    <button class="category-btn" onclick="showInstructions('kupplung')">🔗<br> Kupplung</button>
-                    <button class="category-btn" onclick="showInstructions('hlk')">❄️<br> HLK</button>
-                    <button class="category-btn" onclick="showInstructions('funk')">📡<br> KIS/TIMS/Funk</button>
-                    <button class="category-btn" onclick="showInstructions('wc')">🚻<br> WC</button>
-                    <button class="category-btn" onclick="showInstructions('dokumente')">📄<br> Dokumente</button>
-                </div>
-            </div>
-
-            <!-- Anleitung -->
-            <div id="instructions" style="display: none;">
-                <h2><i class="fa-solid fa-circle-info"></i> Störungsbehebung</h2>
-                <p id="instruction-text">Bitte folgen Sie den Anweisungen.</p>
-            </div>
+  <div class="container">
+    <!-- Startseite -->
+    <div id="urgency">
+      <h2>Wie dringend ist die Störungsbehebung?</h2>
+      <div class="card-grid">
+        <div class="card red" onclick="selectUrgency(true)">
+          <i class="fa-solid fa-stopwatch"></i>
+          <h3>Sehr dringend</h3>
+          <p>Stillstand / baldige Abfahrt nötig</p>
         </div>
+        <div class="card green" onclick="selectUrgency(false)">
+          <i class="fa-solid fa-check"></i>
+          <h3>Nicht dringend</h3>
+          <p>Leite zur Auswahl weiter</p>
+        </div>
+      </div>
     </div>
-    <script src="app.js"></script>
+
+    <!-- Fahrzeugauswahl -->
+    <div id="vehicle-selection" style="display: none;">
+      <h2>Fahrzeug auswählen</h2>
+      <div class="card-grid">
+        <div class="card" onclick="goToCategory('Re 450 DPZ')">🚂<br>Re 450 (DPZ)</div>
+        <div class="card" onclick="goToCategory('RABe 514 DTZ')">🚆<br>RABe 514 (DTZ)</div>
+        <div class="card" onclick="goToCategory('RABe 511 RVD')">🚄<br>RABe 511 (RVD)</div>
+        <div class="card" onclick="goToCategory('Re 420 HVZ-D')">🚂<br>Re 420 (HVZ-D)</div>
+      </div>
+    </div>
+
+    <!-- Kategorien -->
+    <div id="category-selection" style="display: none;">
+      <h2>Kategorie auswählen</h2>
+      <div class="card-grid category-grid">
+        <div class="card" onclick="showInstructions('fahrsperre')">⚡<br>Fahrsperre</div>
+        <div class="card" onclick="showInstructions('reset')">🔄<br>Reset</div>
+        <div class="card" onclick="showInstructions('leittechnik')">💻<br>Leittechnik</div>
+        <div class="card" onclick="showInstructions('pneumatik')">🌬️<br>Pneumatik</div>
+        <div class="card" onclick="showInstructions('bremsen')">🛑<br>Bremsen</div>
+        <div class="card" onclick="showInstructions('zugbeeinflussung')">🚦<br>Zugbeeinflussung</div>
+        <div class="card" onclick="showInstructions('teloc')">📈<br>TELOC</div>
+        <div class="card" onclick="showInstructions('schleppen')">🚜<br>Schleppen</div>
+        <div class="card" onclick="showInstructions('tueren')">🚪<br>Türen</div>
+        <div class="card" onclick="showInstructions('kupplung')">🔗<br>Kupplung</div>
+        <div class="card" onclick="showInstructions('hlk')">❄️<br>HLK</div>
+        <div class="card" onclick="showInstructions('funk')">📡<br>KIS/TIMS/Funk</div>
+        <div class="card" onclick="showInstructions('wc')">🚻<br>WC</div>
+        <div class="card" onclick="showInstructions('dokumente')">📄<br>Dokumente</div>
+      </div>
+    </div>
+
+    <!-- Anleitung -->
+    <div id="instructions" style="display: none;">
+      <h2>Anleitung</h2>
+      <div class="card">
+        <p id="instruction-text">Bitte folgen Sie den Anweisungen.</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
 </body>
 </html>

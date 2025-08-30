@@ -1,23 +1,18 @@
-# WikiStöria - Moderner Prototyp
+# WikiStöria - Glassmorphism Edition
 
-Dies ist die modernisierte Version des Mini-Prototyps *WikiStöria*.  
-Lokführer können ein Fahrzeug auswählen und dann aus 14 Kategorien die passende Störungsklasse aufrufen.
+Dies ist die modernisierte Version des Prototyps *WikiStöria* mit Glassmorphism-Design.  
 
-## Funktionen
-- Auswahl, ob die Störung **dringend** ist oder nicht
-- Fahrzeugauswahl (Kachel-Design)
-- 14 Störungskategorien pro Fahrzeug
-- Anzeige von **Platzhalter-Anleitungen**
+## Features
+- Auswahl: dringend / nicht dringend
+- Fahrzeugauswahl mit Glas-Kacheln
+- 14 Störungskategorien als Glas-Kacheln
+- Anzeige von Anleitungen
+- Darkmode mit 🌙 / ☀️ Toggle
 
 ## Design
-- Modernes UI mit Farbverlauf (Blau/Violett)
-- Abgerundete Kacheln und Buttons mit Hover-Animation
-- Mobile-optimiertes Layout (ideal für Diensthandys)
-
-## Nutzung
-1. Repository klonen oder ZIP herunterladen
-2. `index.html` im Browser öffnen
-3. Fahrzeug + Kategorie auswählen und Anleitungen anzeigen lassen
+- Glassmorphism-Kacheln (halbtransparent, verschwommen)
+- Farbverlauf-Hintergrund (Hell/Dunkel)
+- Mobile-optimiert
 
 ---
-✉️ Inhalte können direkt in `app.js` im `switch(category)` ergänzt werden.
+Anleitungen können direkt in `app.js` im `switch(category)` gepflegt werden.
