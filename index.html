@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wikistörja - Störungsbehebung</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Wikistörja - Störungsbehebung</h1>
+        <div id="main-content">
+            <!-- Startseite: Dringend oder nicht? -->
+            <div id="urgency">
+                <button onclick="selectUrgency(true)">
+                    <i class="fa-solid fa-triangle-exclamation"></i> Dringend
+                </button>
+                <button onclick="selectUrgency(false)">
+                    <i class="fa-solid fa-clock"></i> Nicht dringend
+                </button>
+            </div>
+
+            <!-- Fahrzeugauswahl -->
+            <div id="vehicle-selection" style="display: none;">
+                <h2><i class="fa-solid fa-train"></i> Fahrzeug auswählen</h2>
+                <div class="vehicle-grid">
+                    <button class="vehicle-btn" onclick="goToCategory('Re 450 DPZ')">
+                        🚂 <br> Re 450 (DPZ)
+                    </button>
+                    <button class="vehicle-btn" onclick="goToCategory('RABe 514 DTZ')">
+                        🚆 <br> RABe 514 (DTZ)
+                    </button>
+                    <button class="vehicle-btn" onclick="goToCategory('RABe 511 RVD')">
+                        🚄 <br> RABe 511 (RVD)
+                    </button>
+                    <button class="vehicle-btn" onclick="goToCategory('Re 420 HVZ-D')">
+                        🚂 <br> Re 420 (HVZ-D)
+                    </button>
+                </div>
+            </div>
+
+            <!-- Kategorisierung -->
+            <div id="category-selection" style="display: none;">
+                <h2><i class="fa-solid fa-screwdriver-wrench"></i> Störungskategorie</h2>
+                <div class="category-grid">
+                    <button class="category-btn" onclick="showInstructions('bremsen')">
+                        🛑 <br> Bremsen
+                    </button>
+                    <button class="category-btn" onclick="showInstructions('fahrsperre')">
+                        🚦 <br> Fahrsperre
+                    </button>
+                    <button class="category-btn" onclick="showInstructions('elektronik')">
+                        ⚡ <br> Elektronik
+                    </button>
+                </div>
+            </div>
+
+            <!-- Anleitung -->
+            <div id="instructions" style="display: none;">
+                <h2><i class="fa-solid fa-circle-info"></i> Störungsbehebung</h2>
+                <p id="instruction-text">Bitte folgen Sie den Anweisungen.</p>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
