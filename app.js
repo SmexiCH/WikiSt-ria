@@ -45,7 +45,13 @@ function goToCategory(vehicle) {
 }
 
 function showInstructions(category) {
-  fetch(`content/${category}.html`)
+  let vehicleKey = "";
+  if (selectedVehicle.includes("DPZ")) vehicleKey = "dpz";
+  else if (selectedVehicle.includes("DTZ")) vehicleKey = "dtz";
+  else if (selectedVehicle.includes("RVD")) vehicleKey = "rvd";
+  else if (selectedVehicle.includes("HVZ")) vehicleKey = "hvzd";
+
+  fetch(`content/${vehicleKey}/${category}.html`)
     .then(response => response.text())
     .then(data => {
       document.getElementById('instruction-text').innerHTML =
