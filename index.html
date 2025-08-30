@@ -36,10 +36,22 @@
     <div id="vehicle-selection" style="display: none;">
       <h2>Fahrzeug auswählen</h2>
       <div class="card-grid">
-        <div class="card" onclick="goToCategory('Re 450 DPZ')">🚂<br><span>Re 450 (DPZ)</span></div>
-        <div class="card" onclick="goToCategory('RABe 514 DTZ')">🚆<br><span>RABe 514 (DTZ)</span></div>
-        <div class="card" onclick="goToCategory('RABe 511 RVD')">🚄<br><span>RABe 511 (RVD)</span></div>
-        <div class="card" onclick="goToCategory('Re 420 HVZ-D')">🚂<br><span>Re 420 (HVZ-D)</span></div>
+        <div class="card dpz" onclick="goToCategory('Re 450 DPZ')">
+          <i class="fa-solid fa-train"></i>
+          <span>Re 450 (DPZ)</span>
+        </div>
+        <div class="card dtz" onclick="goToCategory('RABe 514 DTZ')">
+          <i class="fa-solid fa-train-subway"></i>
+          <span>RABe 514 (DTZ)</span>
+        </div>
+        <div class="card rvd" onclick="goToCategory('RABe 511 RVD')">
+          <i class="fa-solid fa-train-tram"></i>
+          <span>RABe 511 (RVD)</span>
+        </div>
+        <div class="card hvzd" onclick="goToCategory('Re 420 HVZ-D')">
+          <i class="fa-solid fa-subway"></i>
+          <span>Re 420 (HVZ-D)</span>
+        </div>
       </div>
     </div>
 
