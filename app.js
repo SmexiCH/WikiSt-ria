@@ -45,7 +45,8 @@ function goToCategory(vehicle) {
 }
 
 function showInstructions(category) {
+  let instructionText = "Kategorie: " + category + "\nAnleitung für " + selectedVehicle;
   document.getElementById('instruction-text').textContent =
-    "Fahrzeug: " + selectedVehicle + "\n\nKategorie: " + category;
+    "Fahrzeug: " + selectedVehicle + "\n\n" + instructionText;
   navigateTo('instructions');
 }
