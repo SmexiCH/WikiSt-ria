@@ -1,6 +1,7 @@
-# Wikistörja - Prototyp
+# Wikistörja - Prototyp V2
 
-Dies ist ein **Mini-Prototyp** für die App *Wikistörja*, die Lokführern bei Störungen hilft, schnell Abhilfe zu finden.
+Dies ist die erweiterte Version des Mini-Prototyps für die App *Wikistörja*.  
+Lokführer können ein Fahrzeug auswählen und dann aus 14 Kategorien die passende Störungsklasse aufrufen.
 
 ## Funktionen
 - Auswahl, ob die Störung **dringend** ist oder nicht
@@ -9,21 +10,18 @@ Dies ist ein **Mini-Prototyp** für die App *Wikistörja*, die Lokführern bei S
   - RABe 514 (DTZ)
   - RABe 511 (RVD)
   - Re 420 (HVZ-D)
-- Auswahl der **Störungskategorie** (Bremsen, Fahrsperre, Elektronik)
-- Anzeige von **Hinweisen zur Störungsbehebung**
+- 14 Störungskategorien pro Fahrzeug
+- Anzeige von **Platzhalter-Anleitungen** (für spätere Inhalte)
 
 ## Aufbau
 - **index.html** → Grundstruktur der App
 - **style.css** → Modernes Design (mobilfreundlich, Kachel-Layout)
-- **app.js** → Logik zur Steuerung der Navigation und Anzeige
+- **app.js** → Logik zur Navigation und Anzeige der Kategorien/Anleitungen
 
 ## Nutzung
 1. Repository klonen oder ZIP herunterladen
 2. `index.html` im Browser öffnen
-3. App durchklicken
-
-## Vorschau
-Die App öffnet sich wie eine kleine mobile Web-App mit einfacher Navigation.
+3. Fahrzeug + Kategorie auswählen und Anleitungen anzeigen lassen
 
 ---
-✉️ Feedback und Ideen zum Ausbau sind willkommen!
+✉️ Inhalte können direkt in `app.js` im `switch(category)` ergänzt werden.
