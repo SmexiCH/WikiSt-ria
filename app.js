@@ -39,7 +39,7 @@ function goBack() {
 
 function selectUrgency(isUrgent) {
   if (isUrgent) {
-    alert("Bitte rufen Sie sofort die Notfallnummer an!");
+    alert("📞 Anruf an Helpdesk 051 222 18 53!");
   } else {
     navigateTo('vehicle-selection');
   }
