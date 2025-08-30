@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const toggleBtn = document.getElementById("darkmode-toggle");
   toggleBtn.addEventListener("click", () => {
     document.body.classList.toggle("light");
-    toggleBtn.textContent = document.body.classList.contains("light") ? "🌙" : "☀️";
+    toggleBtn.textContent = document.body.classList.contains("light") ? "☀️" : "🌙";
   });
 
   navigateTo('urgency');

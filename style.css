@@ -121,3 +121,21 @@ body {
     font-size: 1.8rem;
   }
 }
+
+
+/* Lightmode Styles */
+body.light {
+  background: #f4f6f9;
+  color: #222;
+}
+
+body.light .card {
+  background: #fff;
+  color: #222;
+}
+
+body.light #back-btn,
+body.light #darkmode-toggle {
+  background: #ddd;
+  color: #222;
+}
