@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
-
 :root {
   --bg-gradient: linear-gradient(135deg, #667eea, #764ba2);
   --card-bg: rgba(255, 255, 255, 0.2);
@@ -22,7 +20,6 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  transition: background 0.3s, color 0.3s;
 }
 
 .header {
@@ -30,36 +27,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: white;
   font-weight: 600;
-}
-
-.logo {
-  font-size: 1.3rem;
-}
-
-.header-actions {
-  display: flex;
-  gap: 10px;
-}
-
-#back-btn,
-#darkmode-toggle {
-  background: var(--card-bg);
-  border: 1px solid var(--card-border);
-  border-radius: 10px;
-  padding: 6px 10px;
-  font-size: 1rem;
-  color: var(--text-color);
-  cursor: pointer;
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  transition: background 0.3s;
-}
-
-#back-btn:hover,
-#darkmode-toggle:hover {
-  background: rgba(255,255,255,0.25);
 }
 
 .container {
@@ -75,7 +43,7 @@ body {
 .card-grid,
 .category-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
   gap: 15px;
 }
 
@@ -84,14 +52,12 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  aspect-ratio: 1 / 1;
   font-size: 0.9rem;
   font-weight: 500;
   border-radius: 20px;
   background: var(--card-bg);
   border: 1px solid var(--card-border);
   backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
   box-shadow: 0 8px 20px rgba(0,0,0,0.15);
   transition: transform 0.2s, box-shadow 0.2s;
   color: var(--text-color);
@@ -99,60 +65,26 @@ body {
   padding: 10px;
 }
 
+.card img {
+  width: 70%;
+  max-width: 120px;
+  height: auto;
+  margin-bottom: 12px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
 .card:hover {
   transform: scale(1.05);
   box-shadow: 0 12px 25px rgba(0,0,0,0.25);
 }
 
-.card i {
-  font-size: 2.2rem;
-  margin-bottom: 12px;
-}
-
-.card span {
-  font-size: 0.9rem;
-  margin-top: 6px;
-}
-
-/* Fahrzeug-spezifische Randfarben */
-.card.dpz { border-left: 6px solid #ff7675; }   /* Rot für DPZ */
-.card.dtz { border-left: 6px solid #74b9ff; }   /* Blau für DTZ */
-.card.rvd { border-left: 6px solid #55efc4; }   /* Grün für RVD */
-.card.hvzd { border-left: 6px solid #ffeaa7; }  /* Gelb für HVZ-D */
-
-.card.red { border-left: 6px solid #ff6b6b; }
-.card.green { border-left: 6px solid #51cf66; }
-
 .instruction-card {
   width: 100%;
-  aspect-ratio: auto;
   padding: 1.5rem;
 }
 
 h2 {
   margin-bottom: 1rem;
   text-align: center;
-}
-
-/* Animation für Screens */
-.container > div {
-  animation: fadeIn 0.3s ease;
-}
-
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(10px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-/* Mobile Anpassung */
-@media (max-width: 600px) {
-  .container {
-    padding: 1rem;
-  }
-  h2 {
-    font-size: 1.1rem;
-  }
-  .card {
-    font-size: 0.8rem;
-  }
 }
