@@ -1,22 +1,18 @@
-# Wikistörja - Prototyp V2
+# WikiStöria - Moderner Prototyp
 
-Dies ist die erweiterte Version des Mini-Prototyps für die App *Wikistörja*.  
+Dies ist die modernisierte Version des Mini-Prototyps *WikiStöria*.  
 Lokführer können ein Fahrzeug auswählen und dann aus 14 Kategorien die passende Störungsklasse aufrufen.
 
 ## Funktionen
 - Auswahl, ob die Störung **dringend** ist oder nicht
 - Fahrzeugauswahl (Kachel-Design)
-  - Re 450 (DPZ)
-  - RABe 514 (DTZ)
-  - RABe 511 (RVD)
-  - Re 420 (HVZ-D)
 - 14 Störungskategorien pro Fahrzeug
-- Anzeige von **Platzhalter-Anleitungen** (für spätere Inhalte)
+- Anzeige von **Platzhalter-Anleitungen**
 
-## Aufbau
-- **index.html** → Grundstruktur der App
-- **style.css** → Modernes Design (mobilfreundlich, Kachel-Layout)
-- **app.js** → Logik zur Navigation und Anzeige der Kategorien/Anleitungen
+## Design
+- Modernes UI mit Farbverlauf (Blau/Violett)
+- Abgerundete Kacheln und Buttons mit Hover-Animation
+- Mobile-optimiertes Layout (ideal für Diensthandys)
 
 ## Nutzung
 1. Repository klonen oder ZIP herunterladen
