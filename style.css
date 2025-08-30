@@ -123,22 +123,34 @@ body {
 }
 
 
-/* Lightmode Styles */
-body.light {
-  background: #f4f6f9 !important;
+/* System-Overrides neutralisieren */
+@media (prefers-color-scheme: dark) {
+  body { background: #0b0f19; }
+}
+@media (prefers-color-scheme: light) {
+  body { background: #f4f6f9; }
+}
+
+/* Lightmode Styles mit höherer Spezifität */
+body.light, body.light * {
   color: #222 !important;
 }
 
+body.light {
+  background: #f4f6f9 !important;
+}
+
 body.light .card {
-  background: #ffffffcc !important; /* halbtransparent weiß */
-  color: #222 !important;
+  background: #ffffffcc !important;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
   border: 1px solid #ddd;
+  color: #222 !important;
 }
 
 body.light .instruction-card {
   background: #ffffff !important;
   border: 1px solid #ddd;
+  color: #222 !important;
 }
 
 body.light #back-btn,
@@ -146,3 +158,19 @@ body.light #darkmode-toggle {
   background: #ddd !important;
   color: #222 !important;
 }
+
+/* Lightmode Pastellfarben pro Kategorie */
+body.light .card[onclick*="bremsen"]   { background: #ffe5e5 !important; }
+body.light .card[onclick*="fahrsperre"]{ background: #e5ffe5 !important; }
+body.light .card[onclick*="reset"]     { background: #e5f0ff !important; }
+body.light .card[onclick*="leittechnik"] { background: #fffbe5 !important; }
+body.light .card[onclick*="pneumatik"] { background: #f0f0f0 !important; }
+body.light .card[onclick*="zugbeeinflussung"] { background: #f3e5ff !important; }
+body.light .card[onclick*="teloc"]     { background: #e5ffff !important; }
+body.light .card[onclick*="schleppen"] { background: #fff2e5 !important; }
+body.light .card[onclick*="tueren"]    { background: #e5fff2 !important; }
+body.light .card[onclick*="kupplung"]  { background: #faf3e0 !important; }
+body.light .card[onclick*="hlk"]       { background: #e5f7ff !important; }
+body.light .card[onclick*="funk"]      { background: #ffeedd !important; }
+body.light .card[onclick*="wc"]        { background: #f9e5ff !important; }
+body.light .card[onclick*="dokumente"] { background: #f7f7f7 !important; }
