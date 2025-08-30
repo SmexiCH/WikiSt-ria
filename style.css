@@ -106,7 +106,12 @@ body {
 
 .card i {
   font-size: 2rem;
-  margin-bottom: 6px;
+  margin-bottom: 12px; /* mehr Abstand */
+}
+
+.card span {
+  font-size: 0.9rem;
+  margin-top: 4px;
 }
 
 .card.red { border-left: 6px solid #ff6b6b; }

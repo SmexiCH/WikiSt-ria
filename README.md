@@ -1,13 +1,10 @@
-# WikiStöria - App Style Edition
+# WikiStöria - App Style Edition (mit mehr Abstand)
 
-Diese Version von *WikiStöria* ist im modernen **App-Design** umgesetzt.
+Diese Version von *WikiStöria* nutzt das moderne App-Design mit Icons und mehr **Abstand zwischen Symbol und Text**.
 
 ## Features
-- Kategorien als quadratische App-Icons
+- Kategorien als quadratische App-Icons (mit extra Abstand)
 - Smooth Screen-Transitions
-- Modernes Header-Layout (Zurück + Darkmode)
-- Responsive Design für Smartphone, Tablet und Desktop
+- Moderner Header (Zurück + Darkmode)
+- Responsive Layout für Smartphone, Tablet und Desktop
 - Meldung bei "Sehr dringend": 📞 051 222 18 53
-
-## Nutzung
-Einfach `index.html` im Browser öffnen (idealerweise mobil).
