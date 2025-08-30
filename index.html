@@ -23,13 +23,11 @@
       <div class="card-grid">
         <div class="card red" onclick="selectUrgency(true)">
           <i class="fa-solid fa-stopwatch"></i>
-          <h3>Sehr dringend</h3>
-          <p>Stillstand / baldige Abfahrt nötig</p>
+          <span>Sehr dringend</span>
         </div>
         <div class="card green" onclick="selectUrgency(false)">
           <i class="fa-solid fa-check"></i>
-          <h3>Nicht dringend</h3>
-          <p>Leite zur Auswahl weiter</p>
+          <span>Nicht dringend</span>
         </div>
       </div>
     </div>
@@ -38,38 +36,38 @@
     <div id="vehicle-selection" style="display: none;">
       <h2>Fahrzeug auswählen</h2>
       <div class="card-grid">
-        <div class="card" onclick="goToCategory('Re 450 DPZ')">🚂<br>Re 450 (DPZ)</div>
-        <div class="card" onclick="goToCategory('RABe 514 DTZ')">🚆<br>RABe 514 (DTZ)</div>
-        <div class="card" onclick="goToCategory('RABe 511 RVD')">🚄<br>RABe 511 (RVD)</div>
-        <div class="card" onclick="goToCategory('Re 420 HVZ-D')">🚂<br>Re 420 (HVZ-D)</div>
+        <div class="card" onclick="goToCategory('Re 450 DPZ')">🚂<br><span>Re 450 (DPZ)</span></div>
+        <div class="card" onclick="goToCategory('RABe 514 DTZ')">🚆<br><span>RABe 514 (DTZ)</span></div>
+        <div class="card" onclick="goToCategory('RABe 511 RVD')">🚄<br><span>RABe 511 (RVD)</span></div>
+        <div class="card" onclick="goToCategory('Re 420 HVZ-D')">🚂<br><span>Re 420 (HVZ-D)</span></div>
       </div>
     </div>
 
     <!-- Kategorien -->
     <div id="category-selection" style="display: none;">
       <h2>Kategorie auswählen</h2>
-      <div class="card-grid category-grid">
-        <div class="card" onclick="showInstructions('fahrsperre')">⚡<br>Fahrsperre</div>
-        <div class="card" onclick="showInstructions('reset')">🔄<br>Reset</div>
-        <div class="card" onclick="showInstructions('leittechnik')">💻<br>Leittechnik</div>
-        <div class="card" onclick="showInstructions('pneumatik')">🌬️<br>Pneumatik</div>
-        <div class="card" onclick="showInstructions('bremsen')">🛑<br>Bremsen</div>
-        <div class="card" onclick="showInstructions('zugbeeinflussung')">🚦<br>Zugbeeinflussung</div>
-        <div class="card" onclick="showInstructions('teloc')">📈<br>TELOC</div>
-        <div class="card" onclick="showInstructions('schleppen')">🚜<br>Schleppen</div>
-        <div class="card" onclick="showInstructions('tueren')">🚪<br>Türen</div>
-        <div class="card" onclick="showInstructions('kupplung')">🔗<br>Kupplung</div>
-        <div class="card" onclick="showInstructions('hlk')">❄️<br>HLK</div>
-        <div class="card" onclick="showInstructions('funk')">📡<br>KIS/TIMS/Funk</div>
-        <div class="card" onclick="showInstructions('wc')">🚻<br>WC</div>
-        <div class="card" onclick="showInstructions('dokumente')">📄<br>Dokumente</div>
+      <div class="category-grid">
+        <div class="card" onclick="showInstructions('fahrsperre')"><i class="fa-solid fa-bolt"></i><span>Fahrsperre</span></div>
+        <div class="card" onclick="showInstructions('reset')"><i class="fa-solid fa-rotate-right"></i><span>Reset</span></div>
+        <div class="card" onclick="showInstructions('leittechnik')"><i class="fa-solid fa-laptop-code"></i><span>Leittechnik</span></div>
+        <div class="card" onclick="showInstructions('pneumatik')"><i class="fa-solid fa-wind"></i><span>Pneumatik</span></div>
+        <div class="card" onclick="showInstructions('bremsen')"><i class="fa-solid fa-car-burst"></i><span>Bremsen</span></div>
+        <div class="card" onclick="showInstructions('zugbeeinflussung')"><i class="fa-solid fa-train-subway"></i><span>Zugbeeinflussung</span></div>
+        <div class="card" onclick="showInstructions('teloc')"><i class="fa-solid fa-chart-line"></i><span>TELOC</span></div>
+        <div class="card" onclick="showInstructions('schleppen')"><i class="fa-solid fa-truck-monster"></i><span>Schleppen</span></div>
+        <div class="card" onclick="showInstructions('tueren')"><i class="fa-solid fa-door-open"></i><span>Türen</span></div>
+        <div class="card" onclick="showInstructions('kupplung')"><i class="fa-solid fa-link"></i><span>Kupplung</span></div>
+        <div class="card" onclick="showInstructions('hlk')"><i class="fa-solid fa-snowflake"></i><span>HLK</span></div>
+        <div class="card" onclick="showInstructions('funk')"><i class="fa-solid fa-satellite-dish"></i><span>KIS/TIMS/Funk</span></div>
+        <div class="card" onclick="showInstructions('wc')"><i class="fa-solid fa-restroom"></i><span>WC</span></div>
+        <div class="card" onclick="showInstructions('dokumente')"><i class="fa-solid fa-file-alt"></i><span>Dokumente</span></div>
       </div>
     </div>
 
     <!-- Anleitung -->
     <div id="instructions" style="display: none;">
       <h2>Anleitung</h2>
-      <div class="card">
+      <div class="card instruction-card">
         <p id="instruction-text">Bitte folgen Sie den Anweisungen.</p>
       </div>
     </div>

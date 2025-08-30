@@ -1,13 +1,13 @@
-# WikiStöria - Responsive Edition mit Header-Back
+# WikiStöria - App Style Edition
+
+Diese Version von *WikiStöria* ist im modernen **App-Design** umgesetzt.
 
 ## Features
-- Responsive Design: Kategorien passen sich automatisch an (1 Spalte auf Handy, mehrere auf Desktop)
-- Zurück-Button im Header neben Darkmode
-- Auswahl: dringend / nicht dringend
-- Fahrzeugauswahl mit Glas-Kacheln
-- 14 Störungskategorien
-- Darkmode mit 🌙 / ☀️ Toggle
+- Kategorien als quadratische App-Icons
+- Smooth Screen-Transitions
+- Modernes Header-Layout (Zurück + Darkmode)
+- Responsive Design für Smartphone, Tablet und Desktop
 - Meldung bei "Sehr dringend": 📞 051 222 18 53
 
 ## Nutzung
-Einfach `index.html` im Browser öffnen (auch mobil).
+Einfach `index.html` im Browser öffnen (idealerweise mobil).
