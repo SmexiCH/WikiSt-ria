@@ -48,6 +48,26 @@ body {
   color: var(--text-color);
 }
 
+#back-btn {
+  position: fixed;
+  top: 70px;
+  left: 20px;
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 12px;
+  padding: 6px 12px;
+  color: var(--text-color);
+  cursor: pointer;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: background 0.3s;
+  z-index: 1000;
+}
+#back-btn:hover {
+  background: rgba(255,255,255,0.3);
+}
+
 .container {
   flex: 1;
   padding: 2rem;

@@ -1,4 +1,5 @@
 let selectedVehicle = "";
+let historyStack = [];
 
 document.addEventListener("DOMContentLoaded", () => {
   const toggleBtn = document.getElementById("darkmode-toggle");
@@ -6,27 +7,50 @@ document.addEventListener("DOMContentLoaded", () => {
     document.body.classList.toggle("dark");
     toggleBtn.textContent = document.body.classList.contains("dark") ? "☀️" : "🌙";
   });
+
+  // Initialseite setzen
+  navigateTo('urgency');
 });
+
+function navigateTo(id) {
+  // alle Sektionen verstecken
+  document.querySelectorAll(".container > div").forEach(div => {
+    div.style.display = "none";
+  });
+
+  // aktuelle Seite merken
+  if (historyStack.length === 0 || historyStack[historyStack.length-1] !== id) {
+    historyStack.push(id);
+  }
+
+  // gewünschte anzeigen
+  document.getElementById(id).style.display = "block";
+
+  // Back-Button sichtbar machen, außer auf Startseite
+  document.getElementById("back-btn").style.display = 
+    historyStack.length > 1 ? "block" : "none";
+}
+
+function goBack() {
+  historyStack.pop(); // aktuelle Seite entfernen
+  const prev = historyStack.pop(); // vorige Seite holen
+  if (prev) navigateTo(prev);
+}
 
 function selectUrgency(isUrgent) {
   if (isUrgent) {
     alert("Bitte rufen Sie sofort die Notfallnummer an!");
   } else {
-    document.getElementById('urgency').style.display = 'none';
-    document.getElementById('vehicle-selection').style.display = 'block';
+    navigateTo('vehicle-selection');
   }
 }
 
 function goToCategory(vehicle) {
   selectedVehicle = vehicle;
-  document.getElementById('vehicle-selection').style.display = 'none';
-  document.getElementById('category-selection').style.display = 'block';
+  navigateTo('category-selection');
 }
 
 function showInstructions(category) {
-  document.getElementById('category-selection').style.display = 'none';
-  document.getElementById('instructions').style.display = 'block';
-
   let instructionText = "";
 
   switch (category) {
@@ -78,4 +102,6 @@ function showInstructions(category) {
 
   document.getElementById('instruction-text').textContent =
     "Fahrzeug: " + selectedVehicle + "\n\n" + instructionText;
+
+  navigateTo('instructions');
 }

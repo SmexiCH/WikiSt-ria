@@ -1,4 +1,4 @@
-# WikiStöria - Glassmorphism Edition
+# WikiStöria - Glassmorphism Edition mit Zurück-Button
 
 Dies ist die modernisierte Version des Prototyps *WikiStöria* mit Glassmorphism-Design.  
 
@@ -8,6 +8,7 @@ Dies ist die modernisierte Version des Prototyps *WikiStöria* mit Glassmorphism
 - 14 Störungskategorien als Glas-Kacheln
 - Anzeige von Anleitungen
 - Darkmode mit 🌙 / ☀️ Toggle
+- **Zurück-Button** für einfache Navigation
 
 ## Design
 - Glassmorphism-Kacheln (halbtransparent, verschwommen)
