@@ -127,6 +127,28 @@ body {
 .instruction-card {
   width: 100%;
   padding: 1.5rem;
+  text-align: left;
+}
+
+.instruction-card h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 1.3rem;
+  color: #ffd166;
+}
+
+.instruction-card p {
+  margin-bottom: 8px;
+}
+
+.instruction-card ul {
+  padding-left: 20px;
+  margin-bottom: 12px;
+}
+
+.instruction-card li {
+  margin-bottom: 6px;
+  line-height: 1.6;
 }
 
 h2 {

@@ -45,38 +45,46 @@ function goToCategory(vehicle) {
 }
 
 function showInstructions(category) {
-  if (selectedVehicle.includes("DPZ")) {
-    if (category === "fahrsperre") {
-      let instructionText =
-        "Fahrsperre aktiv\n\n" +
-        "Ausgangslage:\n" +
-        "- Fst. ist aufgerüstet\n" +
-        "- Lf kann keine Traktion aufbauen. Fahrsperre leuchtet\n\n" +
-        "Behebungsmassnahmen:\n" +
-        "- EP-Bremshebel auf Endstellung kontrollieren (EP Hebel nochmals ziehen und lösen)\n" +
-        "- Wendeschalter in Fahrtrichtung stellen (Kontrolle ob Sicherheitseinrichtungen angesprochen haben)\n" +
-        "- Federspeicherbremse lose kontrollieren\n" +
-        "  * Falls Federspeicherbremse nicht löst (Fsp. Lampe leuchtet dauernd): Fz nochmals in Parkstellung bringen, und erneut aus Park nehmen\n" +
-        "- Kontrolle Türschlaufe/Türschliessung\n" +
-        "- Kontrolle Luftvorrat (HL+SL)\n" +
-        "- Hauptschalter/Stromabnehmer ein?\n" +
-        "- Bei mehreren Einheiten Kontrolle ob alle auf Präsenz vorhanden\n" +
-        "- Federspeicherbremse Notgelöst? (Kleiner Kasten aussen an DG Bt/AB Offen?)";
-      
-      document.getElementById('instruction-text').textContent =
-        "Fahrzeug: " + selectedVehicle + "\n\n" + instructionText;
-      navigateTo('instructions');
-      return;
-    }
+  if (category === "fahrsperre" && selectedVehicle.includes("DPZ")) {
+    let instructionHTML = `
+      <h3>Fahrsperre aktiv</h3>
+      <p><strong>Ausgangslage:</strong></p>
+      <ul>
+        <li>Fst. ist aufgerüstet</li>
+        <li>Lf kann keine Traktion aufbauen. Fahrsperre leuchtet</li>
+      </ul>
+      <p><strong>Behebungsmassnahmen:</strong></p>
+      <ul>
+        <li>EP-Bremshebel auf Endstellung kontrollieren (EP Hebel nochmals ziehen und lösen)</li>
+        <li>Wendeschalter in Fahrtrichtung stellen (Kontrolle ob Sicherheitseinrichtungen angesprochen haben)</li>
+        <li>Federspeicherbremse lose kontrollieren
+          <ul>
+            <li>Falls Federspeicherbremse nicht löst (Fsp. Lampe leuchtet dauernd): Fz nochmals in Parkstellung bringen, und erneut aus Park nehmen</li>
+          </ul>
+        </li>
+        <li>Kontrolle Türschlaufe/Türschliessung</li>
+        <li>Kontrolle Luftvorrat (HL+SL)</li>
+        <li>Hauptschalter/Stromabnehmer ein?</li>
+        <li>Bei mehreren Einheiten Kontrolle ob alle auf Präsenz vorhanden</li>
+        <li>Federspeicherbremse Notgelöst? (Kleiner Kasten aussen an DG Bt/AB Offen?)</li>
+      </ul>
+    `;
 
-    if (category === "reset") {
-      navigateTo('submenu-reset');
-      return;
-    }
+    document.getElementById('instruction-text').innerHTML =
+      "<strong>Fahrzeug: " + selectedVehicle + "</strong><br><br>" + instructionHTML;
+
+    navigateTo('instructions');
+    return;
   }
 
-  document.getElementById('instruction-text').textContent =
-    "Fahrzeug: " + selectedVehicle + "\n\nKeine spezifische Anleitung verfügbar für: " + category;
+  if (category === "reset" && selectedVehicle.includes("DPZ")) {
+    navigateTo('submenu-reset');
+    return;
+  }
+
+  document.getElementById('instruction-text').innerHTML =
+    "<strong>Fahrzeug: " + selectedVehicle + "</strong><br><br>" +
+    "<p>Keine spezifische Anleitung verfügbar für: <em>" + category + "</em></p>";
   navigateTo('instructions');
 }
 
@@ -84,17 +92,17 @@ function showSubInstruction(topic) {
   let text = "";
   switch (topic) {
     case "motordrehgestelle":
-      text = "Anleitung: Abtrennung von Motordrehgestellen (nur DPZ)";
+      text = "<h3>Abtrennung von Motordrehgestellen (nur DPZ)</h3><p>Hier folgt die Anleitung …</p>";
       break;
     case "leittechnik":
-      text = "Anleitung: Leittechnik Reset (nur DPZ)";
+      text = "<h3>Leittechnik Reset (nur DPZ)</h3><p>Hier folgt die Anleitung …</p>";
       break;
     case "funk":
-      text = "Anleitung: Funk Reset (nur DPZ)";
+      text = "<h3>Funk Reset (nur DPZ)</h3><p>Hier folgt die Anleitung …</p>";
       break;
   }
 
-  document.getElementById('instruction-text').textContent =
-    "Fahrzeug: " + selectedVehicle + "\n\n" + text;
+  document.getElementById('instruction-text').innerHTML =
+    "<strong>Fahrzeug: " + selectedVehicle + "</strong><br><br>" + text;
   navigateTo('instructions');
 }

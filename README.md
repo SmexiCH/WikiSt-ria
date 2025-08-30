@@ -1,12 +1,10 @@
-# WikiStöria - DPZ Spezialversion
+# WikiStöria - DPZ Spezialversion mit HTML-Listen
 
 ## Änderungen in dieser Version
-- **Fahrsperre** zeigt eine detaillierte Anleitung, aber nur für DPZ.
-- **Reset** öffnet ein Untermenü mit 3 Punkten (nur für DPZ):
-  - Abtrennung von Motordrehgestellen
-  - Leittechnik Reset
-  - Funk Reset
-- Für andere Fahrzeuge erscheint ein Hinweis: "Keine spezifische Anleitung verfügbar".
+- Alle Anleitungen nutzen **innerHTML** statt textContent
+- Damit können Überschriften, Absätze und Listen formatiert werden
+- Beispiel: DPZ Fahrsperre ist jetzt mit Listenpunkten dargestellt
+- Einheitliches CSS für <ul> und <li> für bessere Lesbarkeit
 
 ## Features
 - Einheitliche Icons für Fahrzeuge und Kategorien
