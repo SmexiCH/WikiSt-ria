@@ -1,9 +1,10 @@
-# WikiStöria - Emoji Version mit Darkmode-Fix
+# WikiStöria - Emoji Version mit modernem Lightmode
 
 ## Änderungen in dieser Version
 - Dark-/Lightmode Schalter funktioniert jetzt korrekt
-- 🌙 = Darkmode (Standard)
-- ☀️ = Lightmode (heller Hintergrund, dunkle Schrift)
+- 🌙 = Darkmode (Standard, dunkelblau)
+- ☀️ = Lightmode (hell, modernisiert)
+- Lightmode hat halbtransparente weiße Karten mit Schatten und Border
 
 ## Features
 - Einheitliche Emojis für Fahrzeuge und Kategorien
