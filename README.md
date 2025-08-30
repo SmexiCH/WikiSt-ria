@@ -1,13 +1,13 @@
-# WikiStöria - Mobile Optimized Edition
+# WikiStöria - Responsive Edition mit Header-Back
 
 ## Features
+- Responsive Design: Kategorien passen sich automatisch an (1 Spalte auf Handy, mehrere auf Desktop)
+- Zurück-Button im Header neben Darkmode
 - Auswahl: dringend / nicht dringend
 - Fahrzeugauswahl mit Glas-Kacheln
 - 14 Störungskategorien
-- Anzeige von Anleitungen
 - Darkmode mit 🌙 / ☀️ Toggle
-- Zurück-Button **oben links** (besser sichtbar)
-- **Mobil optimiert**: Karten einspaltig auf kleinen Screens
+- Meldung bei "Sehr dringend": 📞 051 222 18 53
 
-## Hinweis
-Bei "Sehr dringend" erscheint eine Meldung mit Telefonnummer: 📞 051 222 18 53.
+## Nutzung
+Einfach `index.html` im Browser öffnen (auch mobil).
