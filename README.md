@@ -1,12 +1,12 @@
-# WikiStöria - Mobile Fix Edition
+# WikiStöria - Mobile Full Width & Bremsen Emoji Edition
 
 ## Änderungen in dieser Version
-- Header-Buttons (Zurück & Darkmode) bleiben nebeneinander, auch auf Handy
-- Buttons und Karten auf dem Handy deutlich größer
-- Icons und Überschriften angepasst für bessere Lesbarkeit
+- Karten auf dem Handy: bildschirmfüllend (1 Spalte, volle Breite)
+- Kategorie "Bremsen" nutzt jetzt 🔩 Symbol statt FontAwesome-Icon
 
 ## Features
 - Einheitliche Icons für Fahrzeuge und Kategorien
+- Buttons größer & besser klickbar
 - Smooth Screen-Transitions
 - Moderner Header (Zurück + Darkmode)
 - Responsive Layout für Smartphone, Tablet und Desktop

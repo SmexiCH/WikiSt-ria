@@ -105,7 +105,7 @@ body {
   box-shadow: 0 12px 25px rgba(0,0,0,0.25);
 }
 
-.card i {
+.card i, .card span:first-child {
   font-size: 2.5rem;
   margin-bottom: 14px;
 }
@@ -159,11 +159,17 @@ h2 {
   h2 {
     font-size: 1.3rem;
   }
-  .card {
-    font-size: 1rem;
-    padding: 16px;
+  .card-grid,
+  .category-grid {
+    grid-template-columns: 1fr;
   }
-  .card i {
-    font-size: 2.8rem;
+  .card {
+    width: 100%;
+    aspect-ratio: auto;
+    padding: 18px;
+    font-size: 1.1rem;
+  }
+  .card i, .card span:first-child {
+    font-size: 3rem;
   }
 }
