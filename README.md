@@ -1,15 +1,5 @@
-# WikiStöria - Emoji Version mit fahrzeugspezifischen Content-Dateien
+# WikiStöria - Fahrzeugabhängige Inhalte mit neuer DPZ-Funk-Anleitung
 
 ## Änderungen in dieser Version
-- Jede Fahrzeugbaureihe hat jetzt eigene Anleitungen:
-  - `content/dpz/*.html`
-  - `content/dtz/*.html`
-  - `content/rvd/*.html`
-  - `content/hvzd/*.html`
-- Beispiel: `content/dpz/tueren.html` ≠ `content/dtz/tueren.html`
-
-## Features
-- Dark-/Lightmode Schalter 🌙/☀️
-- Emojis für Fahrzeuge und Kategorien
-- Anleitungen ausgelagert in fahrzeugspezifische Content-Dateien
-- Meldung bei "Sehr dringend": 📞 051 222 18 53
+- Datei `content/dpz/funk.html` enthält jetzt die neue, korrigierte und detaillierte Anleitung für DPZ Funk
+- Alle anderen Dateien bleiben Platzhalter
