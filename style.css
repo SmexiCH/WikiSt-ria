@@ -1,21 +1,20 @@
-
 body { font-family: sans-serif; background: #0b0f19; color: #fff; margin:0; }
 .header { display:flex; justify-content:space-between; align-items:center; padding:1rem; }
-.header-actions { display:flex; gap:12px; }
-.container { padding: 0 16px 24px; }
-.card-grid, .category-grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(140px,1fr)); gap:12px; }
-.card { background:#1a1f2e; border-radius:12px; padding:16px; text-align:center; cursor:pointer; }
+.header-actions { display:flex; flex-direction:row; align-items:center; gap:12px; }
+.card-grid, .category-grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(120px,1fr)); gap:10px; }
+.card { background:#1a1f2e; border-radius:12px; padding:15px; text-align:center; cursor:pointer; }
 .card .emoji { font-size:1.8rem; margin-bottom:8px; }
 .instruction-card { background:#1a1f2e; padding:1rem; border-radius:12px; }
+/* Listenfix */
 #instructions ul, #instructions ol { margin:0.5em 1.5em; padding-left:1.5em; }
 #instructions li { margin-bottom:0.5em; line-height:1.5; }
 #instructions hr { margin:1.5em 0; border:none; border-top:1px solid #666; }
-/* Light */
+/* Lightmode allgemein */
 body.light { background:#f4f6f9 !important; color:#222 !important; }
 body.light .card { background:#fff !important; color:#222 !important; border:1px solid #ddd; box-shadow:0 4px 10px rgba(0,0,0,0.1); }
 body.light .instruction-card { background:#fff !important; border:1px solid #ddd; color:#222 !important; }
 body.light #back-btn, body.light #darkmode-toggle { background:#ddd !important; color:#222 !important; }
-/* Pastels for main categories */
+/* Lightmode Pastellfarben nur für Kategorien */
 body.light #category-selection .card[onclick*="bremsen"]   { background:#ffe5e5 !important; }
 body.light #category-selection .card[onclick*="fahrsperre"]{ background:#e5ffe5 !important; }
 body.light #category-selection .card[onclick*="reset"]     { background:#e5f0ff !important; }
@@ -31,10 +30,10 @@ body.light #category-selection .card[onclick*="funk"]      { background:#ffeedd 
 body.light #category-selection .card[onclick*="tims"]      { background:#f9e5ff !important; }
 body.light #category-selection .card[onclick*="wc"]        { background:#f9e5ff !important; }
 body.light #category-selection .card[onclick*="dokumente"] { background:#f7f7f7 !important; }
-/* Dringend (falls später nötig) */
+/* Lightmode Dringend-Karten */
 body.light .card.red { background:#ffdddd !important; border:1px solid #ff8888 !important; color:#b00000 !important; }
 body.light .card.green { background:#ddffdd !important; border:1px solid #66bb66 !important; color:#006600 !important; }
-/* Dark nuances main categories */
+/* Darkmode Nuancen nur für Kategorien */
 body:not(.light) #category-selection .card[onclick*="bremsen"]   { background:#3b2d2d !important; }
 body:not(.light) #category-selection .card[onclick*="fahrsperre"]{ background:#2d3b2d !important; }
 body:not(.light) #category-selection .card[onclick*="reset"]     { background:#2d2f3b !important; }

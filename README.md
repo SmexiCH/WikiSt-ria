@@ -1,1 +1,1 @@
-DPZ Subkategorien gemäss Liste – Platzhalterinhalte erstellt.
+Restore der DPZ-Inhalte und Design-Fixes.
