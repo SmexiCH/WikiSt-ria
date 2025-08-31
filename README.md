@@ -1,5 +1,6 @@
-# WikiStöria - Fahrzeugabhängige Inhalte mit neuer DPZ-Funk-Anleitung
+# WikiStöria - DPZ mit KIS/TIMS-Inhalten
 
 ## Änderungen in dieser Version
-- Datei `content/dpz/funk.html` enthält jetzt die neue, korrigierte und detaillierte Anleitung für DPZ Funk
-- Alle anderen Dateien bleiben Platzhalter
+- Neue Kategorie `content/dpz/tims.html` für KIS/TIMS mit ausführlicher Anleitung
+- `content/dpz/funk.html` weiterhin mit beiden Funk-Szenarien
+- Alle anderen Kategorien sind Platzhalter
