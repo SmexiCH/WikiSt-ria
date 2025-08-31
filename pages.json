@@ -1,0 +1,787 @@
+[
+  {
+    "path": "content/bremsen.md",
+    "title": "Bremsen",
+    "segments": [
+      "bremsen.md"
+    ]
+  },
+  {
+    "path": "content/dokumente.md",
+    "title": "Dokumente",
+    "segments": [
+      "dokumente.md"
+    ]
+  },
+  {
+    "path": "content/fahrsperre.md",
+    "title": "Fahrsperre",
+    "segments": [
+      "fahrsperre.md"
+    ]
+  },
+  {
+    "path": "content/funk.md",
+    "title": "Funk",
+    "segments": [
+      "funk.md"
+    ]
+  },
+  {
+    "path": "content/hlk.md",
+    "title": "Hlk",
+    "segments": [
+      "hlk.md"
+    ]
+  },
+  {
+    "path": "content/kupplung.md",
+    "title": "Kupplung",
+    "segments": [
+      "kupplung.md"
+    ]
+  },
+  {
+    "path": "content/leittechnik.md",
+    "title": "Leittechnik",
+    "segments": [
+      "leittechnik.md"
+    ]
+  },
+  {
+    "path": "content/pneumatik.md",
+    "title": "Pneumatik",
+    "segments": [
+      "pneumatik.md"
+    ]
+  },
+  {
+    "path": "content/reset.md",
+    "title": "Reset",
+    "segments": [
+      "reset.md"
+    ]
+  },
+  {
+    "path": "content/schleppen.md",
+    "title": "Schleppen",
+    "segments": [
+      "schleppen.md"
+    ]
+  },
+  {
+    "path": "content/teloc.md",
+    "title": "Teloc",
+    "segments": [
+      "teloc.md"
+    ]
+  },
+  {
+    "path": "content/tueren.md",
+    "title": "Tueren",
+    "segments": [
+      "tueren.md"
+    ]
+  },
+  {
+    "path": "content/wc.md",
+    "title": "Wc",
+    "segments": [
+      "wc.md"
+    ]
+  },
+  {
+    "path": "content/zugbeeinflussung.md",
+    "title": "Zugbeeinflussung",
+    "segments": [
+      "zugbeeinflussung.md"
+    ]
+  },
+  {
+    "path": "content/dpz/bremsen.md",
+    "title": "Bremsen",
+    "segments": [
+      "dpz",
+      "bremsen.md"
+    ]
+  },
+  {
+    "path": "content/dpz/dokumente.md",
+    "title": "Dokumente",
+    "segments": [
+      "dpz",
+      "dokumente.md"
+    ]
+  },
+  {
+    "path": "content/dpz/fahrsperre.md",
+    "title": "Fahrsperre",
+    "segments": [
+      "dpz",
+      "fahrsperre.md"
+    ]
+  },
+  {
+    "path": "content/dpz/funk.md",
+    "title": "Funk",
+    "segments": [
+      "dpz",
+      "funk.md"
+    ]
+  },
+  {
+    "path": "content/dpz/hlk.md",
+    "title": "Hlk",
+    "segments": [
+      "dpz",
+      "hlk.md"
+    ]
+  },
+  {
+    "path": "content/dpz/kupplung.md",
+    "title": "Kupplung",
+    "segments": [
+      "dpz",
+      "kupplung.md"
+    ]
+  },
+  {
+    "path": "content/dpz/leittechnik.md",
+    "title": "Leittechnik",
+    "segments": [
+      "dpz",
+      "leittechnik.md"
+    ]
+  },
+  {
+    "path": "content/dpz/pneumatik.md",
+    "title": "Pneumatik",
+    "segments": [
+      "dpz",
+      "pneumatik.md"
+    ]
+  },
+  {
+    "path": "content/dpz/reset.md",
+    "title": "Reset",
+    "segments": [
+      "dpz",
+      "reset.md"
+    ]
+  },
+  {
+    "path": "content/dpz/schleppen.md",
+    "title": "Schleppen",
+    "segments": [
+      "dpz",
+      "schleppen.md"
+    ]
+  },
+  {
+    "path": "content/dpz/teloc.md",
+    "title": "Teloc",
+    "segments": [
+      "dpz",
+      "teloc.md"
+    ]
+  },
+  {
+    "path": "content/dpz/tims.md",
+    "title": "Tims",
+    "segments": [
+      "dpz",
+      "tims.md"
+    ]
+  },
+  {
+    "path": "content/dpz/tueren.md",
+    "title": "Tueren",
+    "segments": [
+      "dpz",
+      "tueren.md"
+    ]
+  },
+  {
+    "path": "content/dpz/wc.md",
+    "title": "Wc",
+    "segments": [
+      "dpz",
+      "wc.md"
+    ]
+  },
+  {
+    "path": "content/dpz/zugbeeinflussung.md",
+    "title": "Zugbeeinflussung",
+    "segments": [
+      "dpz",
+      "zugbeeinflussung.md"
+    ]
+  },
+  {
+    "path": "content/dpz/bremsen/federspeicherbremse.md",
+    "title": "Federspeicherbremse",
+    "segments": [
+      "dpz",
+      "bremsen",
+      "federspeicherbremse.md"
+    ]
+  },
+  {
+    "path": "content/dpz/bremsen/pneumatische-bremse.md",
+    "title": "Pneumatische Bremse",
+    "segments": [
+      "dpz",
+      "bremsen",
+      "pneumatische-bremse.md"
+    ]
+  },
+  {
+    "path": "content/dpz/dokumente/bedienhandbuecher.md",
+    "title": "Bedienhandbuecher",
+    "segments": [
+      "dpz",
+      "dokumente",
+      "bedienhandbuecher.md"
+    ]
+  },
+  {
+    "path": "content/dpz/funk/zugfunk.md",
+    "title": "Zugfunk",
+    "segments": [
+      "dpz",
+      "funk",
+      "zugfunk.md"
+    ]
+  },
+  {
+    "path": "content/dpz/hlk/fuehreraum-klimaanlage.md",
+    "title": "Fuehreraum Klimaanlage",
+    "segments": [
+      "dpz",
+      "hlk",
+      "fuehreraum-klimaanlage.md"
+    ]
+  },
+  {
+    "path": "content/dpz/kupplung/allgemeine-kupplungsstoerungen.md",
+    "title": "Allgemeine Kupplungsstoerungen",
+    "segments": [
+      "dpz",
+      "kupplung",
+      "allgemeine-kupplungsstoerungen.md"
+    ]
+  },
+  {
+    "path": "content/dpz/kupplung/fahrzeug-manuell-entkuppeln.md",
+    "title": "Fahrzeug Manuell Entkuppeln",
+    "segments": [
+      "dpz",
+      "kupplung",
+      "fahrzeug-manuell-entkuppeln.md"
+    ]
+  },
+  {
+    "path": "content/dpz/leittechnik/reset-leittechnik.md",
+    "title": "Reset Leittechnik",
+    "segments": [
+      "dpz",
+      "leittechnik",
+      "reset-leittechnik.md"
+    ]
+  },
+  {
+    "path": "content/dpz/pneumatik/kompressor.md",
+    "title": "Kompressor",
+    "segments": [
+      "dpz",
+      "pneumatik",
+      "kompressor.md"
+    ]
+  },
+  {
+    "path": "content/dpz/reset/abtrennung-von-motordrehgestellen.md",
+    "title": "Abtrennung Von Motordrehgestellen",
+    "segments": [
+      "dpz",
+      "reset",
+      "abtrennung-von-motordrehgestellen.md"
+    ]
+  },
+  {
+    "path": "content/dpz/reset/fahrzeug-reset.md",
+    "title": "Fahrzeug Reset",
+    "segments": [
+      "dpz",
+      "reset",
+      "fahrzeug-reset.md"
+    ]
+  },
+  {
+    "path": "content/dpz/reset/funk-reset.md",
+    "title": "Funk Reset",
+    "segments": [
+      "dpz",
+      "reset",
+      "funk-reset.md"
+    ]
+  },
+  {
+    "path": "content/dpz/reset/leittechnik-reset.md",
+    "title": "Leittechnik Reset",
+    "segments": [
+      "dpz",
+      "reset",
+      "leittechnik-reset.md"
+    ]
+  },
+  {
+    "path": "content/dpz/schleppen/schleppfahrt.md",
+    "title": "Schleppfahrt",
+    "segments": [
+      "dpz",
+      "schleppen",
+      "schleppfahrt.md"
+    ]
+  },
+  {
+    "path": "content/dpz/teloc/t-log-1500-datensicherung.md",
+    "title": "T Log 1500 Datensicherung",
+    "segments": [
+      "dpz",
+      "teloc",
+      "t-log-1500-datensicherung.md"
+    ]
+  },
+  {
+    "path": "content/dpz/teloc/vanzeigegeraet-re450.md",
+    "title": "Vanzeigegeraet Re450",
+    "segments": [
+      "dpz",
+      "teloc",
+      "vanzeigegeraet-re450.md"
+    ]
+  },
+  {
+    "path": "content/dpz/tims/kis-tims.md",
+    "title": "Kis Tims",
+    "segments": [
+      "dpz",
+      "tims",
+      "kis-tims.md"
+    ]
+  },
+  {
+    "path": "content/dpz/tueren/anleitung-step-by-step-tuerstoerung-beheben.md",
+    "title": "Anleitung Step By Step Tuerstoerung Beheben",
+    "segments": [
+      "dpz",
+      "tueren",
+      "anleitung-step-by-step-tuerstoerung-beheben.md"
+    ]
+  },
+  {
+    "path": "content/dpz/tueren/tueren-abtrennen.md",
+    "title": "Tueren Abtrennen",
+    "segments": [
+      "dpz",
+      "tueren",
+      "tueren-abtrennen.md"
+    ]
+  },
+  {
+    "path": "content/dpz/tueren/tuergruenschleife.md",
+    "title": "Tuergruenschleife",
+    "segments": [
+      "dpz",
+      "tueren",
+      "tuergruenschleife.md"
+    ]
+  },
+  {
+    "path": "content/dpz/wc/wc-notruf.md",
+    "title": "Wc Notruf",
+    "segments": [
+      "dpz",
+      "wc",
+      "wc-notruf.md"
+    ]
+  },
+  {
+    "path": "content/dpz/wc/wc-reset-wegen-stoerung.md",
+    "title": "Wc Reset Wegen Stoerung",
+    "segments": [
+      "dpz",
+      "wc",
+      "wc-reset-wegen-stoerung.md"
+    ]
+  },
+  {
+    "path": "content/dpz/zugbeeinflussung/zub-zugsicherung-sicherheitssteuerung.md",
+    "title": "Zub Zugsicherung Sicherheitssteuerung",
+    "segments": [
+      "dpz",
+      "zugbeeinflussung",
+      "zub-zugsicherung-sicherheitssteuerung.md"
+    ]
+  },
+  {
+    "path": "content/dtz/bremsen.md",
+    "title": "Bremsen",
+    "segments": [
+      "dtz",
+      "bremsen.md"
+    ]
+  },
+  {
+    "path": "content/dtz/dokumente.md",
+    "title": "Dokumente",
+    "segments": [
+      "dtz",
+      "dokumente.md"
+    ]
+  },
+  {
+    "path": "content/dtz/fahrsperre.md",
+    "title": "Fahrsperre",
+    "segments": [
+      "dtz",
+      "fahrsperre.md"
+    ]
+  },
+  {
+    "path": "content/dtz/funk.md",
+    "title": "Funk",
+    "segments": [
+      "dtz",
+      "funk.md"
+    ]
+  },
+  {
+    "path": "content/dtz/hlk.md",
+    "title": "Hlk",
+    "segments": [
+      "dtz",
+      "hlk.md"
+    ]
+  },
+  {
+    "path": "content/dtz/kupplung.md",
+    "title": "Kupplung",
+    "segments": [
+      "dtz",
+      "kupplung.md"
+    ]
+  },
+  {
+    "path": "content/dtz/leittechnik.md",
+    "title": "Leittechnik",
+    "segments": [
+      "dtz",
+      "leittechnik.md"
+    ]
+  },
+  {
+    "path": "content/dtz/pneumatik.md",
+    "title": "Pneumatik",
+    "segments": [
+      "dtz",
+      "pneumatik.md"
+    ]
+  },
+  {
+    "path": "content/dtz/reset.md",
+    "title": "Reset",
+    "segments": [
+      "dtz",
+      "reset.md"
+    ]
+  },
+  {
+    "path": "content/dtz/schleppen.md",
+    "title": "Schleppen",
+    "segments": [
+      "dtz",
+      "schleppen.md"
+    ]
+  },
+  {
+    "path": "content/dtz/teloc.md",
+    "title": "Teloc",
+    "segments": [
+      "dtz",
+      "teloc.md"
+    ]
+  },
+  {
+    "path": "content/dtz/tims.md",
+    "title": "Tims",
+    "segments": [
+      "dtz",
+      "tims.md"
+    ]
+  },
+  {
+    "path": "content/dtz/tueren.md",
+    "title": "Tueren",
+    "segments": [
+      "dtz",
+      "tueren.md"
+    ]
+  },
+  {
+    "path": "content/dtz/wc.md",
+    "title": "Wc",
+    "segments": [
+      "dtz",
+      "wc.md"
+    ]
+  },
+  {
+    "path": "content/dtz/zugbeeinflussung.md",
+    "title": "Zugbeeinflussung",
+    "segments": [
+      "dtz",
+      "zugbeeinflussung.md"
+    ]
+  },
+  {
+    "path": "content/hvzd/bremsen.md",
+    "title": "Bremsen",
+    "segments": [
+      "hvzd",
+      "bremsen.md"
+    ]
+  },
+  {
+    "path": "content/hvzd/dokumente.md",
+    "title": "Dokumente",
+    "segments": [
+      "hvzd",
+      "dokumente.md"
+    ]
+  },
+  {
+    "path": "content/hvzd/fahrsperre.md",
+    "title": "Fahrsperre",
+    "segments": [
+      "hvzd",
+      "fahrsperre.md"
+    ]
+  },
+  {
+    "path": "content/hvzd/funk.md",
+    "title": "Funk",
+    "segments": [
+      "hvzd",
+      "funk.md"
+    ]
+  },
+  {
+    "path": "content/hvzd/hlk.md",
+    "title": "Hlk",
+    "segments": [
+      "hvzd",
+      "hlk.md"
+    ]
+  },
+  {
+    "path": "content/hvzd/kupplung.md",
+    "title": "Kupplung",
+    "segments": [
+      "hvzd",
+      "kupplung.md"
+    ]
+  },
+  {
+    "path": "content/hvzd/leittechnik.md",
+    "title": "Leittechnik",
+    "segments": [
+      "hvzd",
+      "leittechnik.md"
+    ]
+  },
+  {
+    "path": "content/hvzd/pneumatik.md",
+    "title": "Pneumatik",
+    "segments": [
+      "hvzd",
+      "pneumatik.md"
+    ]
+  },
+  {
+    "path": "content/hvzd/reset.md",
+    "title": "Reset",
+    "segments": [
+      "hvzd",
+      "reset.md"
+    ]
+  },
+  {
+    "path": "content/hvzd/schleppen.md",
+    "title": "Schleppen",
+    "segments": [
+      "hvzd",
+      "schleppen.md"
+    ]
+  },
+  {
+    "path": "content/hvzd/teloc.md",
+    "title": "Teloc",
+    "segments": [
+      "hvzd",
+      "teloc.md"
+    ]
+  },
+  {
+    "path": "content/hvzd/tims.md",
+    "title": "Tims",
+    "segments": [
+      "hvzd",
+      "tims.md"
+    ]
+  },
+  {
+    "path": "content/hvzd/tueren.md",
+    "title": "Tueren",
+    "segments": [
+      "hvzd",
+      "tueren.md"
+    ]
+  },
+  {
+    "path": "content/hvzd/wc.md",
+    "title": "Wc",
+    "segments": [
+      "hvzd",
+      "wc.md"
+    ]
+  },
+  {
+    "path": "content/hvzd/zugbeeinflussung.md",
+    "title": "Zugbeeinflussung",
+    "segments": [
+      "hvzd",
+      "zugbeeinflussung.md"
+    ]
+  },
+  {
+    "path": "content/rvd/bremsen.md",
+    "title": "Bremsen",
+    "segments": [
+      "rvd",
+      "bremsen.md"
+    ]
+  },
+  {
+    "path": "content/rvd/dokumente.md",
+    "title": "Dokumente",
+    "segments": [
+      "rvd",
+      "dokumente.md"
+    ]
+  },
+  {
+    "path": "content/rvd/fahrsperre.md",
+    "title": "Fahrsperre",
+    "segments": [
+      "rvd",
+      "fahrsperre.md"
+    ]
+  },
+  {
+    "path": "content/rvd/funk.md",
+    "title": "Funk",
+    "segments": [
+      "rvd",
+      "funk.md"
+    ]
+  },
+  {
+    "path": "content/rvd/hlk.md",
+    "title": "Hlk",
+    "segments": [
+      "rvd",
+      "hlk.md"
+    ]
+  },
+  {
+    "path": "content/rvd/kupplung.md",
+    "title": "Kupplung",
+    "segments": [
+      "rvd",
+      "kupplung.md"
+    ]
+  },
+  {
+    "path": "content/rvd/leittechnik.md",
+    "title": "Leittechnik",
+    "segments": [
+      "rvd",
+      "leittechnik.md"
+    ]
+  },
+  {
+    "path": "content/rvd/pneumatik.md",
+    "title": "Pneumatik",
+    "segments": [
+      "rvd",
+      "pneumatik.md"
+    ]
+  },
+  {
+    "path": "content/rvd/reset.md",
+    "title": "Reset",
+    "segments": [
+      "rvd",
+      "reset.md"
+    ]
+  },
+  {
+    "path": "content/rvd/schleppen.md",
+    "title": "Schleppen",
+    "segments": [
+      "rvd",
+      "schleppen.md"
+    ]
+  },
+  {
+    "path": "content/rvd/teloc.md",
+    "title": "Teloc",
+    "segments": [
+      "rvd",
+      "teloc.md"
+    ]
+  },
+  {
+    "path": "content/rvd/tims.md",
+    "title": "Tims",
+    "segments": [
+      "rvd",
+      "tims.md"
+    ]
+  },
+  {
+    "path": "content/rvd/tueren.md",
+    "title": "Tueren",
+    "segments": [
+      "rvd",
+      "tueren.md"
+    ]
+  },
+  {
+    "path": "content/rvd/wc.md",
+    "title": "Wc",
+    "segments": [
+      "rvd",
+      "wc.md"
+    ]
+  },
+  {
+    "path": "content/rvd/zugbeeinflussung.md",
+    "title": "Zugbeeinflussung",
+    "segments": [
+      "rvd",
+      "zugbeeinflussung.md"
+    ]
+  }
+]

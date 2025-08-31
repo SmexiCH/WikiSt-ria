@@ -1,0 +1,22 @@
+backend:
+  name: github
+  repo: SmexiCH/WikiSt-ria
+  branch: main
+
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+  - name: "content"
+    label: "Content"
+    folder: "content"
+    create: true
+    format: "frontmatter"
+    extension: "md"
+    nested:
+      depth: 100
+      summary: "{{title}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Date", name: "date", widget: "datetime" }
+      - { label: "Body", name: "body", widget: "markdown" }
