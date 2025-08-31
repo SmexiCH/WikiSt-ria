@@ -1,6 +1,6 @@
-# WikiStöria - DPZ mit KIS/TIMS-Inhalten
+# WikiStöria - Vollständiges Build mit KIS/TIMS
 
-## Änderungen in dieser Version
-- Neue Kategorie `content/dpz/tims.html` für KIS/TIMS mit ausführlicher Anleitung
-- `content/dpz/funk.html` weiterhin mit beiden Funk-Szenarien
-- Alle anderen Kategorien sind Platzhalter
+## Änderungen
+- Neue Kategorie "KIS/TIMS" mit ausführlicher Anleitung im DPZ
+- Funk-Kategorie bleibt mit beiden Szenarien
+- Vollständige index.html, style.css, app.js enthalten
