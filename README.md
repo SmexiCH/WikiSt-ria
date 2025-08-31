@@ -1,21 +1,28 @@
-# WikiStöria – Subcategories Enable Patch
+# Recursive Subcategories Patch (Exact-Mode)
 
-Dieses Patch macht die Unterordner sichtbar, **ohne** dass du deine `index.html` anfassen musst.
-Es erkennt automatisch `content/<fahrzeug>/<kategorie>/_index.json` und zeigt dafür ein Untermenü.
+Dieser Patch ergänzt NUR die Logik, dass Unterordner wieder als eigene, klickbare Felder erscheinen – und zwar beliebig tief (Unterordner von Unterordnern). Design/Grössen/Darkmode bleiben unverändert.
 
 ## Installation
-1. Ersetze deine `app.js` mit der beiliegenden Version.
-2. Stelle sicher, dass deine Unterordner-Struktur existiert, z.B.:
-   ```
-   content/dpz/reset/_index.json
-   content/dpz/reset/abtrennung-von-motordrehgestellen.html
-   content/dpz/reset/leittechnik-reset.html
-   ```
-3. Hart neu laden (PC: Ctrl/Cmd+Shift+R, Handy: Cache leeren).
+1) `app.js` in deinem Repo durch die beiliegende Version ersetzen.
+2) Hart neu laden (PC: Ctrl/Cmd+Shift+R, Handy: Cache leeren).
 
-## Wie es funktioniert
-- Deine bestehenden Klicks wie `showInstructions('reset')` bleiben gleich.
-- Das Skript versucht zuerst `content/<v>/<k>/_index.json`. Wenn vorhanden → Unterkachel-Menü.
-- Wenn nicht vorhanden → lädt wie bisher `content/<v>/<k>.html`.
+## Strukturregeln für Inhalte
+- Einstieg: `showInstructions('kategorie')` (unverändert).
+- Für ein **Untermenü** lege in `content/<fahrzeug>/<kategorie>/` eine Datei **`_index.json`** an:
+  ```json
+  {
+    "title": "Untermenü-Titel",
+    "items": [
+      { "key": "teil-a", "label": "Teil A", "emoji": "🛠️" },
+      { "key": "teil-b", "label": "Teil B" }
+    ]
+  }
+  ```
+- Für jeden Eintrag:
+  - **Unterordner-Menü**: eigener Ordner `content/<fahrzeug>/<kategorie>/teil-a/` mit eigener **`_index.json`**.
+  - **Blatt/Seite**: Datei `content/<fahrzeug>/<kategorie>/teil-a.html` (normales HTML mit deiner Anleitung).
 
-Viel Erfolg!
+> Faustregel: Ordner mit `_index.json` = neues klickbares Feld.  
+> Datei `<name>.html` = End-Seite mit Inhalt.
+
+Damit kannst du beliebig tief verschachteln – jeder Knoten kann wieder ein neues Menü sein.

@@ -1,14 +1,13 @@
-// WikiStöria - Subcategories Enable Patch (drop-in)
-// - Works even if index.html still calls showInstructions('...')
-// - Detects content/<vehicle>/<category>/_index.json and shows a subcategory grid
-// - Falls back to content/<vehicle>/<category>.html if no subcats exist
-// - Keeps theme persistence and existing navigation
+// WikiStöria - Recursive Subcategories Patch (Exact-Mode)
+// - Fügt NUR die Logik hinzu, dass Unterordner erneut als klickbare Felder erscheinen (beliebig tief).
+// - Keine Änderungen am Design, keine Button-Grössen, kein Darkmode-Verhalten.
+// - Funktioniert weiterhin mit showInstructions('kategorie').
 
 let selectedVehicle = "";
 let historyStack = [];
 let currentCategory = "";
 
-// --- Theme helpers ---
+// --- Theme (unverändert) ---
 function applyLight(){document.body.classList.add("light");const t=document.getElementById("darkmode-toggle");if(t)t.textContent="☀️";try{localStorage.setItem("theme","light");}catch{}}
 function applyDark(){document.body.classList.remove("light");const t=document.getElementById("darkmode-toggle");if(t)t.textContent="🌙";try{localStorage.setItem("theme","dark");}catch{}}
 
@@ -21,10 +20,7 @@ document.addEventListener("DOMContentLoaded",()=>{
   else applyDark();
   if(toggleBtn){toggleBtn.addEventListener("click",()=>{if(document.body.classList.contains("light")) applyDark(); else applyLight();});}
 
-  // Ensure subcat view exists (works with older index.html)
   ensureSubcatView();
-
-  // If your page starts at 'urgency', keep it; otherwise adjust as needed:
   if (document.getElementById('urgency')) navigateTo('urgency');
   else if (document.getElementById('vehicle-selection')) navigateTo('vehicle-selection');
   else navigateTo('category-selection');
@@ -51,7 +47,7 @@ function navigateTo(id){
 
 function goBack(){ historyStack.pop(); const prev=historyStack.pop(); if(prev) navigateTo(prev); }
 
-// --- Flow handlers (existing API surface) ---
+// --- Öffentliche API, bleibt kompatibel ---
 function selectUrgency(isUrgent){ if(isUrgent){ alert('📞 Anruf an Helpdesk 051 222 18 53!'); } else { navigateTo('vehicle-selection'); } }
 function goToCategory(vehicle){ selectedVehicle = vehicle; navigateTo('category-selection'); }
 
@@ -60,41 +56,34 @@ function vehicleKeyFromName(){
   if (selectedVehicle && selectedVehicle.includes('DTZ')) return 'dtz';
   if (selectedVehicle && selectedVehicle.includes('RVD')) return 'rvd';
   if (selectedVehicle && selectedVehicle.includes('HVZ')) return 'hvzd';
-  // fallback (common case: only DPZ)
   return 'dpz';
 }
 
-// Backward compatible: index.html may still call showInstructions(...)
-// We intercept and try subcategories first
+// ---- RECURSIVE SUBCATS ----
+// showInstructions(category) bleibt Einstiegspunkt.
+// Es versucht zuerst einen Unterordner (/_index.json).
+// Wenn keiner vorhanden: lädt content-HTML.
 function showInstructions(category){
   currentCategory = category;
   const vkey = vehicleKeyFromName();
-  // Try subcategory index first
-  fetch(`content/${vkey}/${category}/_index.json`, {cache:'no-store'}).then(r=>{
-    if(!r.ok) throw new Error('no subcats');
+  openPathRecursive(`content/${vkey}/${category}`);
+}
+
+// Kern: Öffnet einen Pfad rekursiv
+// 1) Gibt es <path>/_index.json ? → Unterkachel-Menü bauen (Items klicken → erneut openPathRecursive(path/item.key))
+// 2) Sonst: <path>.html laden und anzeigen (Blatt/Ende).
+function openPathRecursive(path){
+  fetch(`${path}/_index.json`, {cache:'no-store'}).then(r=>{
+    if(!r.ok) throw new Error('no subcats here');
     return r.json();
   }).then(data=>{
-    // Build grid
-    const titleEl = document.getElementById('subcat-title');
-    const grid = document.getElementById('subcat-grid');
-    if(!titleEl || !grid){ ensureSubcatView(); }
-    if(document.getElementById('subcat-title')) document.getElementById('subcat-title').textContent = data.title || 'Unterbereich wählen';
-    if(document.getElementById('subcat-grid')){
-      const g = document.getElementById('subcat-grid');
-      g.innerHTML='';
-      (data.items||[]).forEach(item=>{
-        const div = document.createElement('div');
-        div.className = 'card';
-        const emoji = item.emoji || '📄';
-        div.innerHTML = `<div class="emoji">${emoji}</div><span>${item.label}</span>`;
-        div.onclick = ()=>openSubcategoryItem(category, item.key);
-        g.appendChild(div);
-      });
-    }
+    const title = (data && data.title) ? data.title : 'Unterbereich wählen';
+    const items = Array.isArray(data.items) ? data.items : [];
+    buildSubcatGrid(title, path, items);
     navigateTo('subcat-selection');
   }).catch(()=>{
-    // Fallback to simple category content
-    fetch(`content/${vkey}/${category}.html`, {cache:'no-store'}).then(r=>r.text()).then(html=>{
+    // Kein _index.json → versuche <path>.html
+    fetch(`${path}.html`, {cache:'no-store'}).then(r=>r.text()).then(html=>{
       const t = document.getElementById('instruction-text');
       if(t) t.innerHTML = `<strong>Fahrzeug: ${selectedVehicle||'DPZ'}</strong><br><br>` + html;
       navigateTo('instructions');
@@ -106,16 +95,25 @@ function showInstructions(category){
   });
 }
 
-// New helper when subcat tile is clicked
-function openSubcategoryItem(category, key){
-  const vkey = vehicleKeyFromName();
-  fetch(`content/${vkey}/${category}/${key}.html`, {cache:'no-store'}).then(r=>r.text()).then(html=>{
-    const t = document.getElementById('instruction-text');
-    if(t) t.innerHTML = `<strong>Fahrzeug: ${selectedVehicle||'DPZ'}</strong><br><br>` + html;
-    navigateTo('instructions');
-  }).catch(()=>{
-    const t = document.getElementById('instruction-text');
-    if(t) t.innerHTML = '<p>Keine Anleitung gefunden.</p>';
-    navigateTo('instructions');
-  });
+function buildSubcatGrid(title, basePath, items){
+  const titleEl = document.getElementById('subcat-title');
+  const grid = document.getElementById('subcat-grid');
+  if(!titleEl || !grid) ensureSubcatView();
+  if(document.getElementById('subcat-title')) document.getElementById('subcat-title').textContent = title;
+  if(document.getElementById('subcat-grid')){
+    const g = document.getElementById('subcat-grid');
+    g.innerHTML = '';
+    items.forEach(item=>{
+      const key = item.key;
+      const label = item.label || key;
+      const emoji = item.emoji || '📄';
+      const div = document.createElement('div');
+      div.className = 'card';
+      div.innerHTML = `<div class="emoji">${emoji}</div><span>${label}</span>`;
+      div.onclick = ()=>openPathRecursive(`${basePath}/${key}`);
+      g.appendChild(div);
+    });
+  }
 }
+
+// ---- Ende Patch ----
