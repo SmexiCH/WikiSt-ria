@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>WikiStöria - Störungsbehebung</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <div class="header">
@@ -14,6 +14,7 @@
       <button id="darkmode-toggle">🌙</button>
     </div>
   </div>
+
   <div class="container">
     <div id="urgency">
       <h2>Wie dringend ist die Störungsbehebung?</h2>
@@ -22,7 +23,8 @@
         <div class="card green" onclick="selectUrgency(false)"><div class="emoji">✅</div><span>Nicht dringend</span></div>
       </div>
     </div>
-    <div id="vehicle-selection" style="display: none;">
+
+    <div id="vehicle-selection" style="display:none;">
       <h2>Fahrzeug auswählen</h2>
       <div class="card-grid">
         <div class="card dpz" onclick="goToCategory('Re 450 DPZ')"><div class="emoji">🚆</div><span>Re 450 (DPZ)</span></div>
@@ -31,7 +33,8 @@
         <div class="card hvzd" onclick="goToCategory('Re 420 HVZ-D')"><div class="emoji">🚉</div><span>Re 420 (HVZ-D)</span></div>
       </div>
     </div>
-    <div id="category-selection" style="display: none;">
+
+    <div id="category-selection" style="display:none;">
       <h2>Kategorie wählen</h2>
       <div class="category-grid">
         <div class="card" onclick="showInstructions('bremsen')"><div class="emoji">🛑</div><span>Bremsen</span></div>
@@ -51,11 +54,15 @@
         <div class="card" onclick="showInstructions('dokumente')"><div class="emoji">📄</div><span>Dokumente</span></div>
       </div>
     </div>
-    <div id="instructions" style="display: none;">
+
+    <div id="instructions" style="display:none;">
       <h2>Anleitung</h2>
-      <div class="card instruction-card"><div id="instruction-text">Bitte folgen Sie den Anweisungen.</div></div>
+      <div class="card instruction-card">
+        <div id="instruction-text">Bitte folgen Sie den Anweisungen.</div>
+      </div>
     </div>
   </div>
+
   <script src="app.js"></script>
 </body>
 </html>

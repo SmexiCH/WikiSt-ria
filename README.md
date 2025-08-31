@@ -1,1 +1,1 @@
-WikiStöria Build mit Fix: Dringend-Karten im Lightmode farbig hervorgehoben (Rot/Grün).
+Restore der DPZ-Inhalte und Design-Fixes.

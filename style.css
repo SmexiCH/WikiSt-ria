@@ -1,7 +1,7 @@
 body { font-family: sans-serif; background: #0b0f19; color: #fff; margin:0; }
-.header { display: flex; justify-content: space-between; align-items:center; padding: 1rem; }
-.header-actions { display:flex; flex-direction: row; align-items:center; gap:12px; }
-.card-grid, .category-grid { display:grid; grid-template-columns: repeat(auto-fit, minmax(120px,1fr)); gap:10px; }
+.header { display:flex; justify-content:space-between; align-items:center; padding:1rem; }
+.header-actions { display:flex; flex-direction:row; align-items:center; gap:12px; }
+.card-grid, .category-grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(120px,1fr)); gap:10px; }
 .card { background:#1a1f2e; border-radius:12px; padding:15px; text-align:center; cursor:pointer; }
 .card .emoji { font-size:1.8rem; margin-bottom:8px; }
 .instruction-card { background:#1a1f2e; padding:1rem; border-radius:12px; }
@@ -33,19 +33,19 @@ body.light #category-selection .card[onclick*="dokumente"] { background:#f7f7f7 
 /* Lightmode Dringend-Karten */
 body.light .card.red { background:#ffdddd !important; border:1px solid #ff8888 !important; color:#b00000 !important; }
 body.light .card.green { background:#ddffdd !important; border:1px solid #66bb66 !important; color:#006600 !important; }
-/* Darkmode Nuancen */
-body:not(.light) .card[onclick*="bremsen"]   { background:#3b2d2d !important; }
-body:not(.light) .card[onclick*="fahrsperre"]{ background:#2d3b2d !important; }
-body:not(.light) .card[onclick*="reset"]     { background:#2d2f3b !important; }
-body:not(.light) .card[onclick*="leittechnik"] { background:#3b392d !important; }
-body:not(.light) .card[onclick*="pneumatik"] { background:#2f2f2f !important; }
-body:not(.light) .card[onclick*="zugbeeinflussung"] { background:#362d3b !important; }
-body:not(.light) .card[onclick*="teloc"]     { background:#2d3b3b !important; }
-body:not(.light) .card[onclick*="schleppen"] { background:#3b332d !important; }
-body:not(.light) .card[onclick*="tueren"]    { background:#2d3b36 !important; }
-body:not(.light) .card[onclick*="kupplung"]  { background:#3b372d !important; }
-body:not(.light) .card[onclick*="hlk"]       { background:#2d363b !important; }
-body:not(.light) .card[onclick*="funk"]      { background:#3b2f2d !important; }
-body:not(.light) .card[onclick*="tims"]      { background:#3b2d37 !important; }
-body:not(.light) .card[onclick*="wc"]        { background:#3b2d37 !important; }
-body:not(.light) .card[onclick*="dokumente"] { background:#2f2f2f !important; }
+/* Darkmode Nuancen nur für Kategorien */
+body:not(.light) #category-selection .card[onclick*="bremsen"]   { background:#3b2d2d !important; }
+body:not(.light) #category-selection .card[onclick*="fahrsperre"]{ background:#2d3b2d !important; }
+body:not(.light) #category-selection .card[onclick*="reset"]     { background:#2d2f3b !important; }
+body:not(.light) #category-selection .card[onclick*="leittechnik"] { background:#3b392d !important; }
+body:not(.light) #category-selection .card[onclick*="pneumatik"] { background:#2f2f2f !important; }
+body:not(.light) #category-selection .card[onclick*="zugbeeinflussung"] { background:#362d3b !important; }
+body:not(.light) #category-selection .card[onclick*="teloc"]     { background:#2d3b3b !important; }
+body:not(.light) #category-selection .card[onclick*="schleppen"] { background:#3b332d !important; }
+body:not(.light) #category-selection .card[onclick*="tueren"]    { background:#2d3b36 !important; }
+body:not(.light) #category-selection .card[onclick*="kupplung"]  { background:#3b372d !important; }
+body:not(.light) #category-selection .card[onclick*="hlk"]       { background:#2d363b !important; }
+body:not(.light) #category-selection .card[onclick*="funk"]      { background:#3b2f2d !important; }
+body:not(.light) #category-selection .card[onclick*="tims"]      { background:#3b2d37 !important; }
+body:not(.light) #category-selection .card[onclick*="wc"]        { background:#3b2d37 !important; }
+body:not(.light) #category-selection .card[onclick*="dokumente"] { background:#2f2f2f !important; }
