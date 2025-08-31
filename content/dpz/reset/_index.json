@@ -2,11 +2,6 @@
   "title": "Fahrzeug Reset",
   "items": [
     {
-      "key": "fahrzeug-reset",
-      "label": "Fahrzeug Reset",
-      "emoji": "🔄"
-    },
-    {
       "key": "abtrennung-von-motordrehgestellen",
       "label": "Abtrennung von Motordrehgestellen",
       "emoji": "🛠️"
@@ -15,11 +10,6 @@
       "key": "leittechnik-reset",
       "label": "Leittechnik Reset",
       "emoji": "💻"
-    },
-    {
-      "key": "funk-reset",
-      "label": "Funk Reset",
-      "emoji": "📡"
     }
   ]
 }
