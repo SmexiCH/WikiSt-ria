@@ -1,6 +1,48 @@
-body { font-family: sans-serif; background: #0b0f19; color: #fff; }
-.header { display: flex; justify-content: space-between; padding: 1rem; }
-.card-grid, .category-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 10px; }
-.card { background: #1a1f2e; border-radius: 12px; padding: 15px; text-align: center; cursor: pointer; }
-.card .emoji { font-size: 1.8rem; margin-bottom: 8px; }
-.instruction-card { background: #1a1f2e; padding: 1rem; border-radius: 12px; }
+body { font-family: sans-serif; background: #0b0f19; color: #fff; margin:0; }
+.header { display: flex; justify-content: space-between; align-items:center; padding: 1rem; }
+.header-actions { display:flex; flex-direction: row; align-items:center; gap:12px; }
+.card-grid, .category-grid { display:grid; grid-template-columns: repeat(auto-fit, minmax(120px,1fr)); gap:10px; }
+.card { background:#1a1f2e; border-radius:12px; padding:15px; text-align:center; cursor:pointer; }
+.card .emoji { font-size:1.8rem; margin-bottom:8px; }
+.instruction-card { background:#1a1f2e; padding:1rem; border-radius:12px; }
+/* Listenfix */
+#instructions ul, #instructions ol { margin:0.5em 1.5em; padding-left:1.5em; }
+#instructions li { margin-bottom:0.5em; line-height:1.5; }
+#instructions hr { margin:1.5em 0; border:none; border-top:1px solid #666; }
+/* Lightmode */
+body.light { background:#f4f6f9 !important; color:#222 !important; }
+body.light .card { color:#222 !important; box-shadow:0 4px 10px rgba(0,0,0,0.1); border:1px solid #ddd; }
+body.light .instruction-card { background:#fff !important; border:1px solid #ddd; color:#222 !important; }
+body.light #back-btn, body.light #darkmode-toggle { background:#ddd !important; color:#222 !important; }
+/* Pastellfarben Lightmode */
+body.light .card[onclick*="bremsen"]   { background:#ffe5e5 !important; }
+body.light .card[onclick*="fahrsperre"]{ background:#e5ffe5 !important; }
+body.light .card[onclick*="reset"]     { background:#e5f0ff !important; }
+body.light .card[onclick*="leittechnik"] { background:#fffbe5 !important; }
+body.light .card[onclick*="pneumatik"] { background:#f0f0f0 !important; }
+body.light .card[onclick*="zugbeeinflussung"] { background:#f3e5ff !important; }
+body.light .card[onclick*="teloc"]     { background:#e5ffff !important; }
+body.light .card[onclick*="schleppen"] { background:#fff2e5 !important; }
+body.light .card[onclick*="tueren"]    { background:#e5fff2 !important; }
+body.light .card[onclick*="kupplung"]  { background:#faf3e0 !important; }
+body.light .card[onclick*="hlk"]       { background:#e5f7ff !important; }
+body.light .card[onclick*="funk"]      { background:#ffeedd !important; }
+body.light .card[onclick*="tims"]      { background:#f9e5ff !important; }
+body.light .card[onclick*="wc"]        { background:#f9e5ff !important; }
+body.light .card[onclick*="dokumente"] { background:#f7f7f7 !important; }
+/* Darkmode Nuancen */
+body:not(.light) .card[onclick*="bremsen"]   { background:#3b2d2d !important; }
+body:not(.light) .card[onclick*="fahrsperre"]{ background:#2d3b2d !important; }
+body:not(.light) .card[onclick*="reset"]     { background:#2d2f3b !important; }
+body:not(.light) .card[onclick*="leittechnik"] { background:#3b392d !important; }
+body:not(.light) .card[onclick*="pneumatik"] { background:#2f2f2f !important; }
+body:not(.light) .card[onclick*="zugbeeinflussung"] { background:#362d3b !important; }
+body:not(.light) .card[onclick*="teloc"]     { background:#2d3b3b !important; }
+body:not(.light) .card[onclick*="schleppen"] { background:#3b332d !important; }
+body:not(.light) .card[onclick*="tueren"]    { background:#2d3b36 !important; }
+body:not(.light) .card[onclick*="kupplung"]  { background:#3b372d !important; }
+body:not(.light) .card[onclick*="hlk"]       { background:#2d363b !important; }
+body:not(.light) .card[onclick*="funk"]      { background:#3b2f2d !important; }
+body:not(.light) .card[onclick*="tims"]      { background:#3b2d37 !important; }
+body:not(.light) .card[onclick*="wc"]        { background:#3b2d37 !important; }
+body:not(.light) .card[onclick*="dokumente"] { background:#2f2f2f !important; }

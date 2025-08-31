@@ -14,24 +14,14 @@
       <button id="darkmode-toggle">🌙</button>
     </div>
   </div>
-
   <div class="container">
-    <!-- Startseite -->
     <div id="urgency">
       <h2>Wie dringend ist die Störungsbehebung?</h2>
       <div class="card-grid">
-        <div class="card red" onclick="selectUrgency(true)">
-          <div class="emoji">⏱️</div>
-          <span>Sehr dringend</span>
-        </div>
-        <div class="card green" onclick="selectUrgency(false)">
-          <div class="emoji">✅</div>
-          <span>Nicht dringend</span>
-        </div>
+        <div class="card red" onclick="selectUrgency(true)"><div class="emoji">⏱️</div><span>Sehr dringend</span></div>
+        <div class="card green" onclick="selectUrgency(false)"><div class="emoji">✅</div><span>Nicht dringend</span></div>
       </div>
     </div>
-
-    <!-- Fahrzeugauswahl -->
     <div id="vehicle-selection" style="display: none;">
       <h2>Fahrzeug auswählen</h2>
       <div class="card-grid">
@@ -41,8 +31,6 @@
         <div class="card hvzd" onclick="goToCategory('Re 420 HVZ-D')"><div class="emoji">🚉</div><span>Re 420 (HVZ-D)</span></div>
       </div>
     </div>
-
-    <!-- Kategorien -->
     <div id="category-selection" style="display: none;">
       <h2>Kategorie wählen</h2>
       <div class="category-grid">
@@ -63,16 +51,11 @@
         <div class="card" onclick="showInstructions('dokumente')"><div class="emoji">📄</div><span>Dokumente</span></div>
       </div>
     </div>
-
-    <!-- Anleitung -->
     <div id="instructions" style="display: none;">
       <h2>Anleitung</h2>
-      <div class="card instruction-card">
-        <div id="instruction-text">Bitte folgen Sie den Anweisungen.</div>
-      </div>
+      <div class="card instruction-card"><div id="instruction-text">Bitte folgen Sie den Anweisungen.</div></div>
     </div>
   </div>
-
   <script src="app.js"></script>
 </body>
 </html>
