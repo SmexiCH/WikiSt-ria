@@ -2,10 +2,7 @@ backend:
   name: github
   repo: SmexiCH/WikiSt-ria
   branch: main
-  auth_type: oauth
-  client_id: "Ov23liVfBMHTp2tlgAuN"
-  auth_scope: "repo"
-  client_secret: "98ddd38aa88d2271a337ad1a226749a445da2c1c"
+  auth_type: none
 
 media_folder: "images/uploads"
 public_folder: "/images/uploads"
