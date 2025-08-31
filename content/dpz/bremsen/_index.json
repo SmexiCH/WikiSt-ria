@@ -1,0 +1,15 @@
+{
+  "title": "Bremsen",
+  "items": [
+    {
+      "key": "federspeicherbremse",
+      "label": "Federspeicherbremse",
+      "emoji": "🛑"
+    },
+    {
+      "key": "pneumatische-bremse",
+      "label": "Pneumatische Bremse",
+      "emoji": "⚙️"
+    }
+  ]
+}

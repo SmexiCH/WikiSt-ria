@@ -1,0 +1,10 @@
+{
+  "title": "Zugbeeinflussung",
+  "items": [
+    {
+      "key": "zub-zugsicherung-sicherheitssteuerung",
+      "label": "ZUB / Zugsicherung / Sicherheitssteuerung",
+      "emoji": "🛡️"
+    }
+  ]
+}

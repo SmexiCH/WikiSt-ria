@@ -1,0 +1,15 @@
+{
+  "title": "Kupplung",
+  "items": [
+    {
+      "key": "fahrzeug-manuell-entkuppeln",
+      "label": "Fahrzeug manuell entkuppeln",
+      "emoji": "🔓"
+    },
+    {
+      "key": "allgemeine-kupplungsstoerungen",
+      "label": "Allgemeine Kupplungsstörungen",
+      "emoji": "⚠️"
+    }
+  ]
+}

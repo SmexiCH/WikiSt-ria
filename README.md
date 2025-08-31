@@ -1,1 +1,1 @@
-Vollständiges, sauberes Build mit Theme-Persistenz und Schweizer Schreibweise für DPZ-Inhalte.
+DPZ Subkategorien gemäss Liste – Platzhalterinhalte erstellt.

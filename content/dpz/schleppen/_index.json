@@ -1,0 +1,10 @@
+{
+  "title": "Schleppen",
+  "items": [
+    {
+      "key": "schleppfahrt",
+      "label": "Schleppfahrt",
+      "emoji": "🚛"
+    }
+  ]
+}

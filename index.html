@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="color-scheme" content="light dark" />
-  <title>WikiStöria - Störungsbehebung</title>
+  <title>WikiStöria - DPZ Subkategorien</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -17,43 +17,37 @@
   </div>
 
   <div class="container">
-    <div id="urgency">
-      <h2>Wie dringend ist die Störungsbehebung?</h2>
-      <div class="card-grid">
-        <div class="card red" onclick="selectUrgency(true)"><div class="emoji">⏱️</div><span>Sehr dringend</span></div>
-        <div class="card green" onclick="selectUrgency(false)"><div class="emoji">✅</div><span>Nicht dringend</span></div>
-      </div>
-    </div>
-
-    <div id="vehicle-selection" style="display:none;">
+    <div id="vehicle-selection">
       <h2>Fahrzeug auswählen</h2>
       <div class="card-grid">
         <div class="card dpz" onclick="goToCategory('Re 450 DPZ')"><div class="emoji">🚆</div><span>Re 450 (DPZ)</span></div>
-        <div class="card dtz" onclick="goToCategory('RABe 514 DTZ')"><div class="emoji">🚇</div><span>RABe 514 (DTZ)</span></div>
-        <div class="card rvd" onclick="goToCategory('RABe 511 RVD')"><div class="emoji">🚊</div><span>RABe 511 (RVD)</span></div>
-        <div class="card hvzd" onclick="goToCategory('Re 420 HVZ-D')"><div class="emoji">🚉</div><span>Re 420 (HVZ-D)</span></div>
       </div>
     </div>
 
     <div id="category-selection" style="display:none;">
       <h2>Kategorie wählen</h2>
       <div class="category-grid">
-        <div class="card" onclick="showInstructions('bremsen')"><div class="emoji">🛑</div><span>Bremsen</span></div>
-        <div class="card" onclick="showInstructions('fahrsperre')"><div class="emoji">🚦</div><span>Fahrsperre</span></div>
-        <div class="card" onclick="showInstructions('reset')"><div class="emoji">🔄</div><span>Reset</span></div>
-        <div class="card" onclick="showInstructions('leittechnik')"><div class="emoji">💻</div><span>Leittechnik</span></div>
-        <div class="card" onclick="showInstructions('pneumatik')"><div class="emoji">🔧</div><span>Pneumatik</span></div>
-        <div class="card" onclick="showInstructions('zugbeeinflussung')"><div class="emoji">📡</div><span>Zugbeeinflussung</span></div>
-        <div class="card" onclick="showInstructions('teloc')"><div class="emoji">📊</div><span>TELOC / V‑Messer</span></div>
-        <div class="card" onclick="showInstructions('schleppen')"><div class="emoji">🚛</div><span>Schleppen</span></div>
-        <div class="card" onclick="showInstructions('tueren')"><div class="emoji">🚪</div><span>Einstiegtüren</span></div>
-        <div class="card" onclick="showInstructions('kupplung')"><div class="emoji">🔗</div><span>Kupplung</span></div>
-        <div class="card" onclick="showInstructions('hlk')"><div class="emoji">❄️</div><span>HLK</span></div>
-        <div class="card" onclick="showInstructions('funk')"><div class="emoji">📡</div><span>Funk</span></div>
-        <div class="card" onclick="showInstructions('tims')"><div class="emoji">💬</div><span>KIS / TIMS</span></div>
-        <div class="card" onclick="showInstructions('wc')"><div class="emoji">🚻</div><span>WC</span></div>
-        <div class="card" onclick="showInstructions('dokumente')"><div class="emoji">📄</div><span>Dokumente</span></div>
+        <div class="card" onclick="openCategory('bremsen')"><div class="emoji">🛑</div><span>Bremsen</span></div>
+        <div class="card" onclick="openCategory('fahrsperre')"><div class="emoji">🚦</div><span>Fahrsperre</span></div>
+        <div class="card" onclick="openCategory('reset')"><div class="emoji">🔄</div><span>Reset</span></div>
+        <div class="card" onclick="openCategory('leittechnik')"><div class="emoji">💻</div><span>Leittechnik</span></div>
+        <div class="card" onclick="openCategory('pneumatik')"><div class="emoji">🔧</div><span>Pneumatik</span></div>
+        <div class="card" onclick="openCategory('zugbeeinflussung')"><div class="emoji">📡</div><span>Zugbeeinflussung</span></div>
+        <div class="card" onclick="openCategory('teloc')"><div class="emoji">📊</div><span>TELOC / V‑Messer</span></div>
+        <div class="card" onclick="openCategory('schleppen')"><div class="emoji">🚛</div><span>Schleppen</span></div>
+        <div class="card" onclick="openCategory('tueren')"><div class="emoji">🚪</div><span>Einstiegtüren</span></div>
+        <div class="card" onclick="openCategory('kupplung')"><div class="emoji">🔗</div><span>Kupplung</span></div>
+        <div class="card" onclick="openCategory('hlk')"><div class="emoji">❄️</div><span>HLK</span></div>
+        <div class="card" onclick="openCategory('funk')"><div class="emoji">📡</div><span>Funk</span></div>
+        <div class="card" onclick="openCategory('tims')"><div class="emoji">💬</div><span>KIS / TIMS</span></div>
+        <div class="card" onclick="openCategory('wc')"><div class="emoji">🚻</div><span>WC</span></div>
+        <div class="card" onclick="openCategory('dokumente')"><div class="emoji">📄</div><span>Dokumente</span></div>
       </div>
+    </div>
+
+    <div id="subcat-selection" style="display:none;">
+      <h2 id="subcat-title">Unterbereich wählen</h2>
+      <div class="category-grid" id="subcat-grid"></div>
     </div>
 
     <div id="instructions" style="display:none;">

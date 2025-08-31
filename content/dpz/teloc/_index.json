@@ -1,0 +1,15 @@
+{
+  "title": "TELOC / V‑Messer",
+  "items": [
+    {
+      "key": "t-log-1500-datensicherung",
+      "label": "T-Log 1500 Datensicherung",
+      "emoji": "💾"
+    },
+    {
+      "key": "vanzeigegeraet-re450",
+      "label": "V‑Anzeigegerät RE450",
+      "emoji": "📊"
+    }
+  ]
+}

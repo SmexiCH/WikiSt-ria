@@ -1,0 +1,15 @@
+{
+  "title": "WC",
+  "items": [
+    {
+      "key": "wc-notruf",
+      "label": "WC Notruf",
+      "emoji": "🚨"
+    },
+    {
+      "key": "wc-reset-wegen-stoerung",
+      "label": "WC Reset wegen Störung",
+      "emoji": "🔄"
+    }
+  ]
+}

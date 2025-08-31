@@ -1,0 +1,10 @@
+{
+  "title": "Leittechnik",
+  "items": [
+    {
+      "key": "reset-leittechnik",
+      "label": "Reset Leittechnik",
+      "emoji": "💻"
+    }
+  ]
+}

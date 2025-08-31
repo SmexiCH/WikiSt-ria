@@ -1,0 +1,20 @@
+{
+  "title": "Einstiegtüren",
+  "items": [
+    {
+      "key": "tueren-abtrennen",
+      "label": "Türen abtrennen",
+      "emoji": "✂️"
+    },
+    {
+      "key": "tuergruenschleife",
+      "label": "Türgrünschleife",
+      "emoji": "🟢"
+    },
+    {
+      "key": "anleitung-step-by-step-tuerstoerung-beheben",
+      "label": "Anleitung Step-by-Step Türstörung beheben",
+      "emoji": "🪛"
+    }
+  ]
+}
