@@ -1,1 +1,1 @@
-WikiStöria Build mit Pastellfarben im Lightmode und dezenten Nuancen im Darkmode. Darstellung ist ab jetzt Standard.
+WikiStöria Build mit Fix: Dringend-Karten im Lightmode farbig hervorgehoben (Rot/Grün).

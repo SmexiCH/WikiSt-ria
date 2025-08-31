@@ -9,27 +9,30 @@ body { font-family: sans-serif; background: #0b0f19; color: #fff; margin:0; }
 #instructions ul, #instructions ol { margin:0.5em 1.5em; padding-left:1.5em; }
 #instructions li { margin-bottom:0.5em; line-height:1.5; }
 #instructions hr { margin:1.5em 0; border:none; border-top:1px solid #666; }
-/* Lightmode */
+/* Lightmode allgemein */
 body.light { background:#f4f6f9 !important; color:#222 !important; }
-body.light .card { color:#222 !important; box-shadow:0 4px 10px rgba(0,0,0,0.1); border:1px solid #ddd; }
+body.light .card { background:#fff !important; color:#222 !important; border:1px solid #ddd; box-shadow:0 4px 10px rgba(0,0,0,0.1); }
 body.light .instruction-card { background:#fff !important; border:1px solid #ddd; color:#222 !important; }
 body.light #back-btn, body.light #darkmode-toggle { background:#ddd !important; color:#222 !important; }
-/* Pastellfarben Lightmode */
-body.light .card[onclick*="bremsen"]   { background:#ffe5e5 !important; }
-body.light .card[onclick*="fahrsperre"]{ background:#e5ffe5 !important; }
-body.light .card[onclick*="reset"]     { background:#e5f0ff !important; }
-body.light .card[onclick*="leittechnik"] { background:#fffbe5 !important; }
-body.light .card[onclick*="pneumatik"] { background:#f0f0f0 !important; }
-body.light .card[onclick*="zugbeeinflussung"] { background:#f3e5ff !important; }
-body.light .card[onclick*="teloc"]     { background:#e5ffff !important; }
-body.light .card[onclick*="schleppen"] { background:#fff2e5 !important; }
-body.light .card[onclick*="tueren"]    { background:#e5fff2 !important; }
-body.light .card[onclick*="kupplung"]  { background:#faf3e0 !important; }
-body.light .card[onclick*="hlk"]       { background:#e5f7ff !important; }
-body.light .card[onclick*="funk"]      { background:#ffeedd !important; }
-body.light .card[onclick*="tims"]      { background:#f9e5ff !important; }
-body.light .card[onclick*="wc"]        { background:#f9e5ff !important; }
-body.light .card[onclick*="dokumente"] { background:#f7f7f7 !important; }
+/* Lightmode Pastellfarben nur für Kategorien */
+body.light #category-selection .card[onclick*="bremsen"]   { background:#ffe5e5 !important; }
+body.light #category-selection .card[onclick*="fahrsperre"]{ background:#e5ffe5 !important; }
+body.light #category-selection .card[onclick*="reset"]     { background:#e5f0ff !important; }
+body.light #category-selection .card[onclick*="leittechnik"] { background:#fffbe5 !important; }
+body.light #category-selection .card[onclick*="pneumatik"] { background:#f0f0f0 !important; }
+body.light #category-selection .card[onclick*="zugbeeinflussung"] { background:#f3e5ff !important; }
+body.light #category-selection .card[onclick*="teloc"]     { background:#e5ffff !important; }
+body.light #category-selection .card[onclick*="schleppen"] { background:#fff2e5 !important; }
+body.light #category-selection .card[onclick*="tueren"]    { background:#e5fff2 !important; }
+body.light #category-selection .card[onclick*="kupplung"]  { background:#faf3e0 !important; }
+body.light #category-selection .card[onclick*="hlk"]       { background:#e5f7ff !important; }
+body.light #category-selection .card[onclick*="funk"]      { background:#ffeedd !important; }
+body.light #category-selection .card[onclick*="tims"]      { background:#f9e5ff !important; }
+body.light #category-selection .card[onclick*="wc"]        { background:#f9e5ff !important; }
+body.light #category-selection .card[onclick*="dokumente"] { background:#f7f7f7 !important; }
+/* Lightmode Dringend-Karten */
+body.light .card.red { background:#ffdddd !important; border:1px solid #ff8888 !important; color:#b00000 !important; }
+body.light .card.green { background:#ddffdd !important; border:1px solid #66bb66 !important; color:#006600 !important; }
 /* Darkmode Nuancen */
 body:not(.light) .card[onclick*="bremsen"]   { background:#3b2d2d !important; }
 body:not(.light) .card[onclick*="fahrsperre"]{ background:#2d3b2d !important; }
