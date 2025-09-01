@@ -1,5 +1,5 @@
 ---
-title: "Allgemeine Kupplungsstoerungen"
+title: Allgemeine Kupplungsstörungen
 date: 2025-08-31
 ---
 
