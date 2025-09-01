@@ -1,5 +1,5 @@
 ---
-title: "Wc Reset Wegen Stoerung"
+title: WC - Reset
 date: 2025-08-31
 ---
 
