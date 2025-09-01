@@ -1,6 +1,6 @@
 ---
 title: WC - Notruf
-date: 2025-08-31
+date: 2025-09-01T19:32:00.000+02:00
 ---
 
 ### WC Notruf
