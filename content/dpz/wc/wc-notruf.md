@@ -1,5 +1,5 @@
 ---
-title: "Wc Notruf"
+title: WC - Notruf
 date: 2025-08-31
 ---
 
